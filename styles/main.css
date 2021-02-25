@@ -11,8 +11,7 @@ body{
 .bakery__logo{
     position: relative;
     margin-top:0.5%;
-    width:12%;
-    height:12%;
+    height:80px;
 }
 
 .bakery__menu{
@@ -28,12 +27,12 @@ body{
 .bakery__header{
     justify-content:space-between;
     display: flex;
+    flex-direction: column;
     background-image: url('/img/banner.png');
     width:100%;
     background-size: cover;
     height: 700px;
-
-   
+  
 }
 
 .bakery__firstOptions{
@@ -56,13 +55,20 @@ body{
    
 }
 
-.bakery__banner{}
-
-
-.bakery__options{
-    font-family: "Oswald";
-    color: white;
-    margin-top:2.2%;
-   
-    
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.bakery__textBanner{
+    text-align: center;
+    display: flex;
+    font-family: "Oswald";
+    margin-bottom: 20%;
+    font-size: 60px;
+    color: white; 
+    justify-content: center;
+}
+
+
