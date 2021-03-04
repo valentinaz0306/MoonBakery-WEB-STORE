@@ -9,25 +9,7 @@ body {
   background-color: white;
 }
 
-.bakery__logo {
-  position: relative;
-  margin-top: 0.5%;
-  height: 100px;
-}
-
-.bakery__menu {
-  margin-top: -2%;
-  width: 40px;
-  height: 40px;
-}
-
-.bakery__user {
-  margin-top: -2%;
-  width: 40px;
-  height: 40px;
-}
-
-.bakery__header {
+.header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -42,9 +24,28 @@ body {
   width: 100%;
   background-size: cover;
   height: 700px;
+  background-color: red;
 }
 
-.bakery__firstOptions {
+.header__logo {
+  position: relative;
+  margin-top: 0.5%;
+  height: 100px;
+}
+
+.header__menu {
+  margin-top: -2%;
+  width: 40px;
+  height: 40px;
+}
+
+.header__user {
+  margin-top: -2%;
+  width: 40px;
+  height: 40px;
+}
+
+.header__firstOptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +57,7 @@ body {
   width: 25%;
 }
 
-.bakery__secOptions {
+.header__secOptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +82,7 @@ body {
           justify-content: space-between;
 }
 
-.bakery__textBanner {
+.header__textBanner {
   margin-top: 6%;
   text-align: center;
   display: -webkit-box;
@@ -97,7 +98,7 @@ body {
   line-height: 1;
 }
 
-.bakery__btn {
+.header__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
