@@ -130,8 +130,8 @@ body {
 .attributes_bigtitle {
   font-family: "Oswald";
   color: #111475;
-  font-size: 55px;
-  margin-top: 10%;
+  font-size: 50px;
+  margin-top: 13%;
 }
 
 .attributes__container {
@@ -144,15 +144,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: solid 1px;
-  margin-left: 10px;
-  border-color: #111475;
+}
+
+.attributes__line1 {
+  width: 155px;
+  height: 2px;
+  margin-right: 2%;
+  background-color: #111475;
+}
+
+.attributes__line2 {
+  width: 155px;
+  height: 2px;
+  margin-left: 2%;
+  background-color: #111475;
 }
 
 .attributes__subtitle {
+  margin-top: 0.5%;
   font-family: "Chivo";
+  font-size: 30px;
   color: #111475;
-  font-size: 35px;
 }
 
 .attributes__information {
@@ -172,23 +184,14 @@ body {
   font-family: "Chivo";
   text-align: center;
   color: #111475;
-  font-size: 20px;
-}
-
-.attributes__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 0%;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  float: right;
+  font-size: 22px;
 }
 
 .attributes__cookie {
-  width: 500px;
-  height: 500px;
-  float: right;
+  margin-top: 2%;
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */
