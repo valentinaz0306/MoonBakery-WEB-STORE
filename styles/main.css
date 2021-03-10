@@ -202,7 +202,7 @@ body {
   position: absolute;
   width: 615px;
   height: 410px;
-  left: 60px;
+  left: 45px;
 }
 
 .advertising {
@@ -218,5 +218,46 @@ body {
   width: 100%;
   background-size: cover;
   height: 500px;
+}
+
+.advertising__info {
+  margin-top: 7%;
+  margin-right: 5%;
+  text-align: right;
+  font-family: "Oswald";
+  font-size: 65px;
+  color: white;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  height: 30%;
+  line-height: 1;
+}
+
+.advertising__btn {
+  margin-left: 75.3%;
+  margin-top: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 280px;
+  height: 75px;
+  border-radius: 8px;
+  background-color: #111475;
+}
+
+.advertising__textbtn {
+  font-family: "Oswald";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 23px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
