@@ -1,0 +1,33 @@
+.attributes{
+
+    display: flex;
+    justify-content: center;
+
+    &_bigtitle{
+
+        font-family: "Oswald";
+        color: rgb(17, 20,117);
+        font-size: 55px;
+        margin-top:10%;  
+    }
+  
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: solid 1px;
+        margin-top: 10px;
+        border-color: rgb(17, 20,117);
+    }
+
+    &__subtitle{
+    font-family: "Chivo";
+    color: rgb(17, 20,117);
+    font-size:35px; 
+    
+}
+
+
+}
+
+
