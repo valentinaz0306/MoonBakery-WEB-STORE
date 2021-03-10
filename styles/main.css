@@ -147,6 +147,7 @@ body {
 }
 
 .attributes__line1 {
+  margin-top: 0.5%;
   width: 155px;
   height: 2px;
   margin-right: 2%;
@@ -154,6 +155,7 @@ body {
 }
 
 .attributes__line2 {
+  margin-top: 0.5%;
   width: 155px;
   height: 2px;
   margin-left: 2%;
@@ -211,7 +213,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 8%;
+  margin-top: 7%;
   background-image: url("/img/advertising.png");
   width: 100%;
   background-size: cover;
