@@ -188,10 +188,17 @@ body {
 }
 
 .attributes__cookie {
-  margin-top: 2%;
+  margin-top: 1%;
   position: absolute;
   width: 380px;
   height: 380px;
   right: 0;
+}
+
+.attributes__flour {
+  position: absolute;
+  width: 610px;
+  height: 410px;
+  left: 50px;
 }
 /*# sourceMappingURL=main.css.map */
