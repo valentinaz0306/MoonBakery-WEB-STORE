@@ -145,7 +145,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-top: solid 1px;
-  margin-top: 10px;
+  margin-left: 10px;
   border-color: #111475;
 }
 
@@ -153,5 +153,42 @@ body {
   font-family: "Chivo";
   color: #111475;
   font-size: 35px;
+}
+
+.attributes__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.attributes__text {
+  margin-top: 4%;
+  font-family: "Chivo";
+  text-align: center;
+  color: #111475;
+  font-size: 20px;
+}
+
+.attributes__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  float: right;
+}
+
+.attributes__cookie {
+  width: 500px;
+  height: 500px;
+  float: right;
 }
 /*# sourceMappingURL=main.css.map */

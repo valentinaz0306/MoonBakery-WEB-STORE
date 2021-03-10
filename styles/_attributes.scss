@@ -12,20 +12,52 @@
     }
   
     &__container{
+       
         display: flex;
         align-items: center;
         justify-content: center;
         border-top: solid 1px;
-        margin-top: 10px;
+        margin-left: 10px;
         border-color: rgb(17, 20,117);
+        
     }
 
     &__subtitle{
     font-family: "Chivo";
     color: rgb(17, 20,117);
-    font-size:35px; 
-    
+    font-size:35px;     
 }
+
+    &__information{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text{
+    margin-top: 4%;
+    font-family: "Chivo";
+    text-align: center;
+    color: rgb(17, 20,117);
+    font-size:20px;     
+}
+
+    &__img{
+        display: flex;
+        margin-right: 0%;
+        justify-content: right;
+        float: right;
+    }
+
+    &__cookie{
+        width:500px;
+        height:500px;   
+        float: right; 
+    }
+
+
+
+    
 
 
 }
