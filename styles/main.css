@@ -190,15 +190,15 @@ body {
 .attributes__cookie {
   margin-top: 1%;
   position: absolute;
-  width: 380px;
-  height: 380px;
-  right: 0;
+  width: 340px;
+  height: 340px;
+  right: 30px;
 }
 
 .attributes__flour {
   position: absolute;
   width: 610px;
   height: 410px;
-  left: 50px;
+  left: 60px;
 }
 /*# sourceMappingURL=main.css.map */
