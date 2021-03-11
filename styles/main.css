@@ -283,6 +283,7 @@ body {
 
 .gallery__p1 {
   width: 400px;
+  height: 550px;
   margin-left: 4%;
 }
 
@@ -292,16 +293,19 @@ body {
 }
 
 .gallery__p2 {
-  width: 450px;
+  width: 440px;
+  height: 270px;
 }
 
 .gallery__p3 {
-  width: 450px;
+  width: 440px;
+  height: 250px;
   margin-top: 6%;
 }
 
 .gallery__p4 {
   width: 400px;
+  height: 550px;
   margin-right: 4%;
 }
 /*# sourceMappingURL=main.css.map */
