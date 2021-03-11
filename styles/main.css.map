@@ -8,7 +8,8 @@
         "_banner.scss",
         "_attributes.scss",
         "_advertising.scss",
-        "_gallery.scss"
+        "_gallery.scss",
+        "_footer.scss"
     ],
     "names": [],
     "file": "main.css"
