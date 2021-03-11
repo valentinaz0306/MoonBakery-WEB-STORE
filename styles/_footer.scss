@@ -1,0 +1,26 @@
+.footer{
+
+    position:absolute;
+    margin-top: 5%;
+    height:500px;
+    background:  rgb(17, 20,117);
+    width:100%;
+
+    &__news{
+        display: flex;
+    }
+
+    &__info{
+        
+        font-family: "Oswald";
+        font-size: 50px;
+        color: white;
+        margin-top:4%;  
+        margin-left: 4%;
+        justify-content: right;
+        height: 30%;
+        line-height: 1;
+    }
+    
+}
+

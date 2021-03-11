@@ -308,4 +308,31 @@ body {
   height: 550px;
   margin-right: 4%;
 }
+
+.footer {
+  position: absolute;
+  margin-top: 5%;
+  height: 500px;
+  background: #111475;
+  width: 100%;
+}
+
+.footer__news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__info {
+  font-family: "Oswald";
+  font-size: 50px;
+  color: white;
+  margin-top: 4%;
+  margin-left: 4%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  height: 30%;
+  line-height: 1;
+}
 /*# sourceMappingURL=main.css.map */
