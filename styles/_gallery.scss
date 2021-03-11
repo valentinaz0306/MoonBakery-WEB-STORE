@@ -1,0 +1,38 @@
+.gallery{
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-between;
+    
+    
+    &__p1{
+        
+        width: 400px;
+        margin-left: 4%;
+       
+       
+    }
+    &__vertical{
+       display: grid; 
+    
+      
+    }
+
+    &__p2{
+
+        width: 450px;
+        
+    }
+
+    &__p3{
+
+        width: 450px;
+        margin-top: 6%;
+        
+    }
+
+    &__p4{
+        width: 400px;
+        margin-right: 4%;
+        
+    }
+}
