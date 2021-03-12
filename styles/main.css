@@ -312,6 +312,9 @@ body {
 
 .footer {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 5%;
   height: 550px;
   background: #111475;
@@ -324,7 +327,7 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  width: 45%;
+  width: 40%;
   height: 100%;
 }
 
@@ -342,15 +345,53 @@ body {
 }
 
 .footer__input {
-  width: 80%;
+  width: 90%;
   height: 20%;
   margin-left: 8%;
-  margin-bottom: 4%;
+  margin-bottom: 23%;
   font-family: "PT Mono";
   color: whitesmoke;
   font-size: 15px;
   background: transparent;
-  border: white;
+  border-bottom-color: whitesmoke;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
   border-radius: 2px;
+  outline-color: whitesmoke;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__link--one {
+  height: 50%;
+  font-family: "Oswald";
+  font-size: 15px;
+  color: white;
+  margin-top: 11%;
+  margin-right: 24%;
+  display: -ms-grid;
+  display: grid;
+  text-align: right;
+}
+
+.footer__link--two {
+  height: 50%;
+  font-family: "Oswald";
+  font-size: 15px;
+  color: white;
+  margin-top: 11%;
+  margin-right: 8%;
+  display: -ms-grid;
+  display: grid;
+  text-align: right;
 }
 /*# sourceMappingURL=main.css.map */
