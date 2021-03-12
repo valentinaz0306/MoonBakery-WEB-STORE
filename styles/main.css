@@ -389,9 +389,35 @@ body {
   font-size: 15px;
   color: white;
   margin-top: 11%;
-  margin-right: 8%;
+  margin-right: -16%;
   display: -ms-grid;
   display: grid;
   text-align: right;
+}
+
+.footer__social {
+  margin-top: 55%;
+  margin-right: 8%;
+  height: 6%;
+}
+
+.footer__face {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__twi {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__ig {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__pint {
+  width: 30px;
+  height: 30px;
 }
 /*# sourceMappingURL=main.css.map */

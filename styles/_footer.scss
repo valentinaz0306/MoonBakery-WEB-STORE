@@ -29,11 +29,6 @@
         line-height: 1;
     }
 
-    &__suscription{
-      
-       
-    }
-
     &__input{
 
         width: 90%;
@@ -81,9 +76,41 @@
         font-size: 15px;
         color: white;
         margin-top:11%; 
-        margin-right: 8%;
+        margin-right: -16%;
         display: grid;
         text-align: right;
+        
+    }
+
+    &__social{
+        
+      margin-top: 55%;
+      margin-right: 8%;
+       height: 6%;
+    }
+
+    &__face{
+
+        width: 30px;
+        height: 30px;
+    }
+
+    &__twi{
+        
+        width: 30px;
+        height: 30px;
+    }
+
+    &__ig{
+        
+        width: 30px;
+        height: 30px;
+    }
+
+    &__pint{
+
+        width: 30px;
+        height: 30px;
         
     }
     
