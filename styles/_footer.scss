@@ -7,20 +7,47 @@
     width:100%;
 
     &__news{
-        display: flex;
+
+        display: grid;
+        justify-content: left;   
+        width: 45%;
+        height: 100%;
     }
+
+    
 
     &__info{
         
         font-family: "Oswald";
         font-size: 45px;
         color: white;
-        margin-top:4%;  
-        margin-left: 4%;
+        margin-top:15%;  
+        margin-left: 8%;
         justify-content: right;
         height: 30%;
         line-height: 1;
     }
+
+    &__suscription{
+      
+       
+    }
+
+    &__input{
+
+        width: 80%;
+        height: 20%;
+        margin-left: 8%;
+        margin-bottom: 4%;
+        font-family: "PT Mono";
+        color: whitesmoke;
+        font-size: 15px;
+        background: transparent;
+        border: white;
+        border-radius: 2px;
+        
+    }
+
     
 }
 

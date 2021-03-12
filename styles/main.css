@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 * {
   margin: 0;
 }
@@ -318,21 +319,38 @@ body {
 }
 
 .footer__news {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 45%;
+  height: 100%;
 }
 
 .footer__info {
   font-family: "Oswald";
   font-size: 45px;
   color: white;
-  margin-top: 4%;
-  margin-left: 4%;
+  margin-top: 15%;
+  margin-left: 8%;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
   height: 30%;
   line-height: 1;
+}
+
+.footer__input {
+  width: 80%;
+  height: 20%;
+  margin-left: 8%;
+  margin-bottom: 4%;
+  font-family: "PT Mono";
+  color: whitesmoke;
+  font-size: 15px;
+  background: transparent;
+  border: white;
+  border-radius: 2px;
 }
 /*# sourceMappingURL=main.css.map */
