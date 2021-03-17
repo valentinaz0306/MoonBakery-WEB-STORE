@@ -16,7 +16,53 @@
 
     &--1{
        width: 310px; 
-       height: 240px;
+       height: 230px;
     }
-    
+
+    &__title{
+
+        font-family: "PT Mono";
+        color:  rgb(17, 20,117);
+        font-size: 12px;
+        text-align: center;
+        margin-top: 3px;
+        
+
+    }
+
+    &__name{
+
+        font-family: "Oswald";
+        color:  rgb(17, 20,117);
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1;
+
+    }
+
+    &__boxes{
+
+        display: flex;
+    }
+
+    &__box1{
+
+        font-family: "Oswald";
+        color:  rgb(17, 20,117);
+        font-size: 12px; 
+        margin-left: 15px; 
+        margin-top: 35px;
+       
+    }
+
+    &__price{
+
+        font-family: "Oswald";
+        color:  rgb(17, 20,117);
+        font-size: 12px;  
+        margin-left: 74px; 
+        margin-top: 35px;  
+    }
+
 }
