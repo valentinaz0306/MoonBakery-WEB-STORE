@@ -52,7 +52,7 @@ function handleCheckBox4() {
     }
 }
 
-//Eventos
+//Events
 checkBox1.addEventListener('click', handleCheckBox1);
 checkBox2.addEventListener('click', handleCheckBox2);
 checkBox3.addEventListener('click', handleCheckBox3);
@@ -60,7 +60,7 @@ checkBox4.addEventListener('click', handleCheckBox4);
 button.addEventListener('click', makeCookie);
 
 
-//Algorito Maestro
+//Algorithm
 function makeCookie() {
 
     if (((checkBox1.checked) || (checkBox2.checked)) && ((checkBox3.checked) || (checkBox4.checked))) {

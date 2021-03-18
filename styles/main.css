@@ -167,6 +167,17 @@ body {
 }
 
 @media (max-width: 900px) {
+  .header {
+    height: 660px;
+  }
+  .header__logo {
+    height: 80px;
+  }
+  .header__user {
+    margin-top: -2%;
+    width: 40px;
+    height: 40px;
+  }
   .header__firstOptions {
     display: none;
   }
@@ -180,14 +191,14 @@ body {
     display: block;
   }
   .header__textBanner {
-    font-size: 55px;
+    font-size: 50px;
     margin-top: 25%;
   }
   .header__btn {
-    margin-bottom: 200px;
+    margin-bottom: 220px;
     font-size: 18px;
-    width: 270px;
-    height: 60px;
+    width: 260px;
+    height: 50px;
   }
 }
 
@@ -276,6 +287,42 @@ body {
   width: 615px;
   height: 410px;
   left: 45px;
+}
+
+@media (max-width: 900px) {
+  .attributes .attributes__cookie {
+    display: none;
+  }
+  .attributes .attributes__flour {
+    display: none;
+  }
+  .attributes .attributes_bigtitle {
+    font-size: 30px;
+    margin-top: 11%;
+    margin-left: 9%;
+  }
+  .attributes .attributes__line1 {
+    margin-top: 0.5%;
+    width: 97px;
+    height: 2px;
+    margin-right: 1%;
+    background-color: #111475;
+  }
+  .attributes .attributes__line2 {
+    margin-top: 0.5%;
+    width: 97px;
+    height: 2px;
+    margin-left: 1%;
+    background-color: #111475;
+  }
+  .attributes .attributes__subtitle {
+    margin-top: 1%;
+    font-size: 18px;
+  }
+  .attributes .attributes__text {
+    margin-top: 5%;
+    font-size: 16px;
+  }
 }
 
 .advertising {

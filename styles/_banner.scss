@@ -119,6 +119,18 @@
 
     .header{
 
+        height: 660px;
+
+        &__logo{
+            height:80px;
+        }
+       
+        &__user{
+            margin-top:-2%;
+            width:40px;
+            height:40px;
+        }
+
         &__firstOptions{
             display: none;
         }
@@ -135,15 +147,15 @@
         }
 
         &__textBanner{
-        font-size: 55px; 
+        font-size: 50px; 
         margin-top: 25%; 
         }
 
         &__btn{
-            margin-bottom: 200px;  
+            margin-bottom: 220px;  
             font-size: 18px;
-            width: 270px;
-            height: 60px;
+            width: 260px;
+            height: 50px;
           }
 
     
