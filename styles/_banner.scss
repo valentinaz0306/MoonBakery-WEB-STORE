@@ -64,11 +64,16 @@
         line-height: 1;
         
     }
+
+    &__containerbtn{
+        display: flex;
+        justify-content: center;
+
+    }
     
     &__btn{
     
       display: flex;
-      margin-left: 40%;
       justify-content: center;
       border-radius: 8px;
       background-color: white;
@@ -76,9 +81,9 @@
       color: rgb(17, 20,117);
       font-size: 23px;
       align-items: center;
-      width: 260px;
-      height: 90px;
-      margin-bottom: 16%;
+      width: 276px;
+      height: 73px;
+      margin-bottom: 15%;
     
     }
 
@@ -135,21 +140,12 @@
         }
 
         &__btn{
-    
-            display: flex;
-            margin-left: 23%;
-            justify-content: center;
-            border-radius: 8px;
-            background-color: white;
-            font-family: "Oswald";
-            color: rgb(17, 20,117);
+            margin-bottom: 200px;  
             font-size: 18px;
-            align-items: center;
-            width: 260px;
-            height: 70px;
-            margin-bottom: 30%;
-          
+            width: 270px;
+            height: 60px;
           }
+
     
     }
 
