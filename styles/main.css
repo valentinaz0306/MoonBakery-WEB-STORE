@@ -544,4 +544,155 @@ body {
   width: 312px;
   height: 230px;
 }
+
+.interaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.interaction__product {
+  margin-left: 8%;
+  margin-top: 6%;
+  position: relative;
+  width: 550px;
+  height: 600px;
+}
+
+.interaction__container {
+  background-color: #ecf1e7;
+  width: 40%;
+  margin-top: 6%;
+  margin-right: 8%;
+}
+
+.interaction__question {
+  font-family: "PT Mono";
+  color: #111475;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.interaction__title {
+  font-family: "Oswald";
+  color: #111475;
+  font-size: 54px;
+  text-align: center;
+  margin-top: 17px;
+  line-height: 1;
+}
+
+.interaction__flavour {
+  font-family: "Chivo";
+  color: #111475;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.interaction__checkbox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3%;
+}
+
+.interaction__check1 {
+  margin-top: 30px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.interaction__vainilla1 {
+  font-family: "PT Mono";
+  font-style: italic;
+  color: #111475;
+  font-size: 21px;
+  text-align: center;
+  margin-top: 26px;
+  margin-left: 25px;
+}
+
+.interaction__check2 {
+  margin-top: 30px;
+  margin-left: 6%;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.interaction__chocolate1 {
+  font-family: "PT Mono";
+  font-style: italic;
+  color: #111475;
+  font-size: 21px;
+  text-align: center;
+  margin-top: 26px;
+  margin-left: 25px;
+}
+
+.interaction__chips {
+  font-family: "Chivo";
+  color: #111475;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.interaction__checkbox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3%;
+}
+
+.interaction__check3 {
+  margin-top: 30px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.interaction__vainilla2 {
+  font-family: "PT Mono";
+  font-style: italic;
+  color: #111475;
+  font-size: 21px;
+  text-align: center;
+  margin-top: 26px;
+  margin-left: 25px;
+}
+
+.interaction__check4 {
+  margin-top: 30px;
+  margin-left: 6%;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.interaction__chocolate2 {
+  font-family: "PT Mono";
+  font-style: italic;
+  color: #111475;
+  font-size: 21px;
+  text-align: center;
+  margin-top: 26px;
+  margin-left: 25px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,163 @@
+.interaction{
+
+display: flex;
+justify-content: center;
+
+    &__product{
+        margin-left: 8%;
+        margin-top: 6%;
+        position: relative;
+        width:550px;
+        height: 600px;
+        
+    }
+
+    &__container{
+        
+        background-color: rgb(236, 241, 231);
+        width: 40%;
+        margin-top: 6%;
+        margin-right: 8%;
+    }
+
+    &__question{
+
+        font-family: "PT Mono";
+        color:  rgb(17, 20,117);
+        font-size: 12px;
+        text-align: center;
+        margin-top: 45px;
+
+    }
+
+    &__title{
+
+        font-family: "Oswald";
+        color:  rgb(17, 20,117);
+        font-size: 54px;
+        text-align: center;
+        margin-top: 17px;
+        line-height: 1;
+        
+    }
+
+
+    &__flavour{
+
+        font-family: "Chivo";
+        color:  rgb(17, 20,117);
+        font-size: 18px;
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+
+    &__checkbox1{
+
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+    }
+
+    &__check1{
+        
+        margin-top: 30px;
+        height: 20px;
+        width: 20px;
+        background-color:white;
+        border-radius: 50%;
+    }
+
+    &__vainilla1{
+
+        font-family: "PT Mono";
+        font-style: italic;
+        color:  rgb(17, 20,117);
+        font-size: 21px;
+        text-align: center;
+        margin-top: 26px;
+        margin-left: 25px;
+    }
+
+
+    &__check2{
+
+        margin-top: 30px;
+        margin-left: 6%;
+        height: 20px;
+        width: 20px;
+        background-color:white;
+        border-radius: 50%;
+    }
+
+    &__chocolate1{
+
+        font-family: "PT Mono";
+        font-style: italic;
+        color:  rgb(17, 20,117);
+        font-size: 21px;
+        text-align: center;
+        margin-top: 26px;
+        margin-left: 25px;
+    }
+
+    &__chips{
+
+        font-family: "Chivo";
+        color:  rgb(17, 20,117);
+        font-size: 18px;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    &__checkbox2{
+
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+    }
+
+    &__check3{
+        
+        margin-top: 30px;
+        height: 20px;
+        width: 20px;
+        background-color:white;
+        border-radius: 50%;
+    }
+
+    &__vainilla2{
+
+        font-family: "PT Mono";
+        font-style: italic;
+        color:  rgb(17, 20,117);
+        font-size: 21px;
+        text-align: center;
+        margin-top: 26px;
+        margin-left: 25px;
+    }
+
+    &__check4{
+
+        margin-top: 30px;
+        margin-left: 6%;
+        height: 20px;
+        width: 20px;
+        background-color:white;
+        border-radius: 50%;
+    }
+
+    &__chocolate2{
+
+        font-family: "PT Mono";
+        font-style: italic;
+        color:  rgb(17, 20,117);
+        font-size: 21px;
+        text-align: center;
+        margin-top: 26px;
+        margin-left: 25px;
+    }
+
+    
+
+}
