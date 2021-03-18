@@ -81,5 +81,78 @@
       margin-bottom: 16%;
     
     }
+
+    /* MOBILE*/
   
+}
+
+    .header__mobile{
+        display: none;
+
+        .header__menu{
+
+            padding: 20px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+
+    .header__secOptions__mobile{
+        display: none;
+
+        .header__user{
+            
+            padding: 20px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+
+@media(max-width: 900px){ 
+
+    .header{
+
+        &__firstOptions{
+            display: none;
+        }
+
+        &__secOptions{
+            display: none;
+        }
+
+        &__mobile{
+            display: block;
+        }
+        &__secOptions__mobile{
+            display: block;
+        }
+
+        &__textBanner{
+        font-size: 55px; 
+        margin-top: 25%; 
+        }
+
+        &__btn{
+    
+            display: flex;
+            margin-left: 23%;
+            justify-content: center;
+            border-radius: 8px;
+            background-color: white;
+            font-family: "Oswald";
+            color: rgb(17, 20,117);
+            font-size: 18px;
+            align-items: center;
+            width: 260px;
+            height: 70px;
+            margin-bottom: 30%;
+          
+          }
+    
+    }
+
+    
+    
 }

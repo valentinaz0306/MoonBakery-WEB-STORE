@@ -43,6 +43,7 @@ body {
   width: 100%;
   background-size: cover;
   height: 700px;
+  /* MOBILE*/
 }
 
 .header__logo {
@@ -135,6 +136,65 @@ body {
   width: 260px;
   height: 90px;
   margin-bottom: 16%;
+}
+
+.header__mobile {
+  display: none;
+}
+
+.header__mobile .header__menu {
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.header__secOptions__mobile {
+  display: none;
+}
+
+.header__secOptions__mobile .header__user {
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 900px) {
+  .header__firstOptions {
+    display: none;
+  }
+  .header__secOptions {
+    display: none;
+  }
+  .header__mobile {
+    display: block;
+  }
+  .header__secOptions__mobile {
+    display: block;
+  }
+  .header__textBanner {
+    font-size: 55px;
+    margin-top: 25%;
+  }
+  .header__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 23%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 8px;
+    background-color: white;
+    font-family: "Oswald";
+    color: #111475;
+    font-size: 18px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 260px;
+    height: 70px;
+    margin-bottom: 30%;
+  }
 }
 
 .attributes {
@@ -555,6 +615,8 @@ body {
 }
 
 .interaction__product {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin-left: 8%;
   margin-top: 6%;
   position: relative;
@@ -564,6 +626,8 @@ body {
 
 .interaction__container {
   background-color: #ecf1e7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   width: 40%;
   margin-top: 6%;
   margin-right: 8%;
@@ -694,5 +758,32 @@ body {
   text-align: center;
   margin-top: 26px;
   margin-left: 25px;
+}
+
+.interaction__btn {
+  margin-top: 12%;
+  margin-left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 375px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #111475;
+}
+
+.interaction__textbtn {
+  font-family: "Oswald";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
