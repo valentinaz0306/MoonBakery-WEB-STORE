@@ -2,6 +2,7 @@
 
 display: flex;
 justify-content: center;
+
     &__images{
            
         margin-left: 8%;
@@ -199,6 +200,182 @@ justify-content: center;
         
       }
       
+      @media(max-width: 900px){
+          
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+            &__images{
+                   
+                margin-left: 20%;
+                margin-top: 12%;
+                width: 60%;
+                height: 430px;
+            
+            }
+            &__img1{
+
+                width: 300px;
+                height: 300px;
+        }
+            &__product{
+        
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px; 
+                width:430px;
+                height: 430px;   
+            }
+
+            &__container{
+
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                width: 86%;
+                margin-top: 0%;
+                margin-left: 7%;
+            }
+        
+            &__question{
+        
+                font-size: 10px;
+                text-align: center;
+                margin-top: 45px;
+        
+            }
+        
+            &__title{
+        
+                font-size: 34px;
+                text-align: center;
+                margin-top: 13px;
+                
+            }
+        
+        
+            &__flavour{
+        
+                font-size: 14px;
+                text-align: center;
+                margin-top: 30px;
+                
+            }
+
+            &__checkbox1{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 0%;
+            }
+        
+            &__check1{
+                
+                position: absolute;
+                margin-top: 0px;
+                margin-left: 30%;
+                margin-bottom: 4%;
+                height: 15px;
+                width: 15px;
+             
+            }
+        
+            &__vainilla1{
+        
+                font-size: 16px;
+                text-align: center;
+                margin-top: 18px;
+                margin-left: 0px;
+            }
+        
+        
+            &__check2{
+        
+                position: absolute;
+                margin-top: 11%;
+                margin-left: 30%;
+                height: 15px;
+                width: 15px;
+            }
+        
+            &__chocolate1{
+        
+                font-size: 16px;
+                text-align: center;
+                margin-top: 18px;
+                margin-left: 0px;
+            }
+        
+            &__chips{
+
+                font-size: 14px;
+                text-align: center;
+                margin-top: 30px;
+            }
+        
+            &__checkbox2{
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 0%;
+            }
+        
+            &__check3{
+                
+                position: absolute;
+                margin-top: 0px;
+                margin-left: 30%;
+                margin-bottom: 4%;
+                height: 15px;
+                width: 15px;
+            }
+        
+            &__vainilla2{
+        
+                font-size: 16px;
+                text-align: center;
+                margin-top: 18px;
+                margin-left: 0px;
+            }
+        
+            &__check4{
+        
+                position: absolute;
+                margin-top: 11%;
+                margin-left: 30%;
+                height: 15px;
+                width: 15px;
+            }
+        
+            &__chocolate2{
+        
+                font-size: 16px;
+                text-align: center;
+                margin-top: 18px;
+                margin-left: 0px;
+            
+            }
+        
+            &__btn{
+                
+                margin-top: 8%;
+                margin-bottom: 7%;
+                margin-left: 22%;
+                width: 230px;
+                height: 40px;
+                    
+              
+              }
+        
+              &__textbtn{
+    
+                font-size: 16px;
+                
+              }
+
+
+      }
 
     
 
