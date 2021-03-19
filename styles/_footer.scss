@@ -1,6 +1,6 @@
 .footer{
 
-    position:absolute;
+    
     display: flex;
     margin-top: 5%;
     height:550px;
@@ -9,9 +9,10 @@
 
     &__news{
 
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: left;   
-        width: 40%;
+        width: 90%;
         height: 100%;
     }
 
@@ -25,13 +26,14 @@
         margin-top:15%;  
         margin-left: 8%;
         justify-content: right;
-        height: 30%;
+        height: 50%;
         line-height: 1;
+    
     }
 
     &__input{
 
-        width: 90%;
+        width: 70%;
         height: 20%;
         margin-left: 8%;
         margin-bottom: 23%;
@@ -51,19 +53,28 @@
     &__links{
 
         display: flex;
-        width: 60%;
-        justify-content:flex-end;
+        margin-top: 5%;
+        
+        
+        
     
     }
-
+    &__containerLink{
+        display: flex;
+        width: 400px;
+        margin-left: 35%;
+      
+       
+    }
     &__link--one{
         
-        height: 50%;
+        height: 290px;
+        width: 600px;
         font-family: "Oswald";
         font-size: 15px;
         color: white;
         margin-top:11%; 
-        margin-right: 24%; 
+        margin-right: 20%; 
         display: grid;
         text-align: right;
         
@@ -71,12 +82,13 @@
 
     &__link--two{
         
-        height: 50%;
+        height: 290px;
+        width: 700px;
         font-family: "Oswald";
         font-size: 15px;
         color: white;
         margin-top:11%; 
-        margin-right: -16%;
+        margin-left: 10%;
         display: grid;
         text-align: right;
         
@@ -84,10 +96,11 @@
 
     &__social{
         
-      margin-top: 55%;
-      margin-right: 8%;
-       height: 6%;
-    }
+        margin-top: 33%;
+        width: 220px;
+        margin-right: 8%;
+        height: 6%;
+        }
 
     &__face{
 
@@ -118,65 +131,6 @@
     @media(max-width: 900px){ 
 
         .footer{
-            display: none;
-            &__news{
-        
-                display: flex;
-                flex-direction: column;
-                justify-content: left;   
-                width: 100%;
-                height: 100%;
-            }
-
-            &__info{
-        
-                height: 25%;
-                width: 200%;
-                font-size: 28px;
-            }
-        
-            &__input{
-        
-                width: 100%;
-            }
-
-            &__links{
-
-                display: flex;
-                margin-top: 50%; 
-                margin-right: 30%;     
-            
-            }
-        
-            &__link--one{
-                
-               
-                font-size: 13px;
-                margin-right: 80%; 
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-               
-                
-            }
-        
-            &__link--two{
-                
-                height: 30%;
-                font-size: 13px;
-                margin-right: 50%;
-                display: flex;
-                flex-direction: column;
-                text-align: left;    
-            }
-
-            &__social{
-                display:table-column;
-                margin-bottom: 2%;
-                margin-right: 2%;
-                
-                
-              }
 
 
         }
