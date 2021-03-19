@@ -1,166 +1,133 @@
 
-.header{
-    
-    justify-content:space-between;
+.header {
     display: flex;
     flex-direction: column;
     background-image: url('../img/banner.png');
-    width:100%;
+    width: 100%;
     background-size: cover;
     height: 700px;
-
-
-    &__logo{
+    &__logo {
         position: relative;
-        margin-top:0.5%;
-        height:100px;
+        margin-top: 0.5%;
+        height: 100px;
     }
-    &__menu{
-        margin-top:-2%;
-        width:40px;
-        height:40px;
+    &__menu {
+        margin-top: -2%;
+        width: 40px;
+        height: 40px;
     }
-    &__user{
-        margin-top:-2%;
-        width:40px;
-        height:40px;
+    &__user {
+        margin-top: -2%;
+        width: 40px;
+        height: 40px;
     }
-
-    &__firstOptions{
+    &__bigcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &__firstOptions {
         display: flex;
         font-family: "Oswald";
         color: white;
-        margin-top:2.2%;  
+        margin-top: 2.2%;
         justify-content: space-around;
         width: 25%;
-       
     }
-    
-    &__secOptions{
+    &__secOptions {
         display: flex;
         font-family: "Oswald";
         color: white;
-        margin-top:2.2%;  
+        margin-top: 2.2%;
         justify-content: space-around;
         width: 26%;
-       
     }
-    
-    &__nav{
+    &__nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    
-    &__textBanner{
-        margin-top: 9%;
+    &__textBanner {
         text-align: center;
         display: flex;
         font-family: "Oswald";
         font-size: 65px;
-        color: white; 
+        color: white;
         justify-content: center;
-        height: 30%;
         line-height: 1;
-        
     }
-
-    &__containerbtn{
+    &__containerbtn {
         display: flex;
         justify-content: center;
-
+        margin-top: 40px;
     }
-    
-    &__btn{
-    
-      display: flex;
-      justify-content: center;
-      border-radius: 8px;
-      background-color: white;
-      font-family: "Oswald";
-      color: rgb(17, 20,117);
-      font-size: 23px;
-      align-items: center;
-      width: 276px;
-      height: 73px;
-      margin-bottom: 15%;
-    
+    &__btn {
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+        background-color: white;
+        font-family: "Oswald";
+        color: rgb(17, 20, 117);
+        font-size: 23px;
+        align-items: center;
+        width: 276px;
+        height: 73px;
     }
-
     /* MOBILE*/
-  
 }
 
-    .header__mobile{
-        display: none;
-
-        .header__menu{
-
-            padding: 20px;
-            width: 40px;
-            height: 40px;
-        }
+.header__mobile {
+    display: none;
+    .header__menu {
+        padding: 20px;
+        width: 40px;
+        height: 40px;
     }
+}
 
-
-    .header__secOptions__mobile{
-        display: none;
-
-        .header__user{
-            
-            padding: 20px;
-            width: 40px;
-            height: 40px;
-        }
+.header__secOptions__mobile {
+    display: none;
+    .header__user {
+        padding: 20px;
+        width: 40px;
+        height: 40px;
     }
+}
 
-
-@media(max-width: 900px){ 
-
-    .header{
-
+@media(max-width: 900px) {
+    .header {
         height: 660px;
-
-        &__logo{
-            height:80px;
+        &__logo {
+            height: 80px;
         }
-       
-        &__user{
-            margin-top:-2%;
-            width:40px;
-            height:40px;
+        &__user {
+            margin-top: -2%;
+            width: 40px;
+            height: 40px;
         }
-
-        &__firstOptions{
+        &__firstOptions {
             display: none;
         }
-
-        &__secOptions{
+        &__secOptions {
             display: none;
         }
-
-        &__mobile{
+        &__mobile {
             display: block;
         }
-        &__secOptions__mobile{
+        &__secOptions__mobile {
             display: block;
         }
-
-        &__textBanner{
-        font-size: 50px; 
-        margin-top: 25%; 
+        &__textBanner {
+            font-size: 50px;
+            margin-top: 25%;
         }
-
-        &__btn{
-            margin-bottom: 220px;  
+        &__btn {
+            margin-bottom: 220px;
             font-size: 18px;
             width: 260px;
             height: 50px;
-          }
-
-    
+        }
     }
-
-    
-    
 }
