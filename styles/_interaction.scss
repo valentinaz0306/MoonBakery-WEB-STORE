@@ -201,9 +201,10 @@ justify-content: center;
       }
       
       @media(max-width: 900px){
-          
+        
+        /*.interaction{*/
+
         display: flex;
-        justify-content: center;
         flex-direction: column;
         
             &__images{
@@ -370,12 +371,10 @@ justify-content: center;
         
               &__textbtn{
     
-                font-size: 16px;
-                
+                font-size: 16px;  
               }
-
-
-      }
+        }
+      /*}*/
 
     
 

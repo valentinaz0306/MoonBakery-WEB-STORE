@@ -8,13 +8,11 @@
         
         width: 400px;
         height: 550px;
-        margin-left: 4%;
-       
-       
+        margin-left: 4%;    
     }
+
     &__vertical{
        display: grid; 
-    
       
     }
 
@@ -22,10 +20,9 @@
 
         width: 440px;
         height: 270px;
-        
-        
-
-        
+        margin-left: 4%;
+        margin-right: 4%;
+           
     }
 
     &__p3{
@@ -33,6 +30,8 @@
         width: 440px;
         height: 250px;
         margin-top: 6%;
+        margin-left: 4%;
+        margin-right: 4%;
         
     }
 
@@ -41,5 +40,52 @@
         height: 550px;
         margin-right: 4%;
         
+    }
+
+    @media(max-width: 900px){
+        .gallery{
+
+    
+            &__p1{
+                
+                width: 200px;
+                height: 275px;
+                margin-left: 4%; 
+                margin-right: 4%;   
+            }
+        
+            &__vertical{
+               display: grid; 
+              
+            }
+        
+            &__p2{
+        
+                width: 220px;
+                height: 135px;
+                margin-left: 4%;
+                margin-right: 4%;
+                   
+            }
+        
+            &__p3{
+        
+                width: 220px;
+                height: 125px;
+                margin-top: 6%;
+                margin-left: 4%;
+                margin-right: 4%;
+                
+            }
+        
+            &__p4{
+                width: 200px;
+                height: 275px;
+                margin-right: 4%;
+                margin-left: 4%; 
+                
+            }
+
+        }
     }
 }

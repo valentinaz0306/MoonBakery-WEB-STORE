@@ -39,6 +39,10 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .add--photo {
+    margin-top: 8%;
+    font-size: 14px;
+  }
 }
 
 .header {
@@ -394,8 +398,8 @@ body {
           align-items: center;
 }
 
-@media (max-width: 800px) {
-  .advertising {
+@media (max-width: 700px) {
+  .advertising .advertising {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -405,15 +409,15 @@ body {
             flex-direction: none;
     margin-top: 10%;
   }
-  .advertising__info {
-    margin-top: 2%;
+  .advertising .advertising__info {
+    margin-top: 25%;
     margin-right: 5%;
     text-align: center;
     font-size: 48px;
     height: 30%;
     line-height: 1;
   }
-  .advertising__btn {
+  .advertising .advertising__btn {
     margin-left: 22%;
     margin-top: 5%;
     display: -webkit-box;
@@ -425,7 +429,7 @@ body {
     width: 260px;
     height: 50px;
   }
-  .advertising__textbtn {
+  .advertising .advertising__textbtn {
     font-size: 18px;
   }
 }
@@ -454,18 +458,54 @@ body {
 .gallery__p2 {
   width: 440px;
   height: 270px;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .gallery__p3 {
   width: 440px;
   height: 250px;
   margin-top: 6%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .gallery__p4 {
   width: 400px;
   height: 550px;
   margin-right: 4%;
+}
+
+@media (max-width: 900px) {
+  .gallery .gallery__p1 {
+    width: 200px;
+    height: 275px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .gallery .gallery__vertical {
+    display: -ms-grid;
+    display: grid;
+  }
+  .gallery .gallery__p2 {
+    width: 220px;
+    height: 135px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .gallery .gallery__p3 {
+    width: 220px;
+    height: 125px;
+    margin-top: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .gallery .gallery__p4 {
+    width: 200px;
+    height: 275px;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
 }
 
 .footer {
@@ -761,74 +801,74 @@ body {
 }
 
 @media (max-width: 900px) {
-  .product {
+  .product .product {
     /* CARD 1*/
     /* CARD 2*/
     /* CARD 3*/
     /* CARD 4*/
   }
-  .product__container {
+  .product .product__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .product__modal1 {
+  .product .product__modal1 {
     background-color: #e7e3da;
     margin-top: 4%;
     width: 280px;
     height: 375px;
     margin-left: 4%;
   }
-  .product--1 {
+  .product .product--1 {
     width: 280px;
     height: 230px;
   }
-  .product__title {
+  .product .product__title {
     font-size: 10px;
     text-align: center;
     margin-top: 3px;
   }
-  .product__name {
+  .product .product__name {
     font-size: 20px;
   }
-  .product__box1 {
+  .product .product__box1 {
     font-size: 10px;
   }
-  .product__price {
+  .product .product__price {
     font-size: 10px;
     margin-left: 74px;
     margin-top: 35px;
   }
-  .product__modal2 {
+  .product .product__modal2 {
     background-color: #e6ebee;
     margin-top: 4%;
     width: 280px;
     height: 375px;
     margin-left: 4%;
   }
-  .product--2 {
+  .product .product--2 {
     width: 280px;
     height: 230px;
   }
-  .product__modal3 {
+  .product .product__modal3 {
     background-color: #f1ecf7;
     margin-top: 4%;
     width: 280px;
     height: 375px;
     margin-left: 4%;
   }
-  .product--3 {
+  .product .product--3 {
     width: 280px;
     height: 230px;
   }
-  .product__modal4 {
+  .product .product__modal4 {
     background-color: #f8f4f1;
     margin-top: 4%;
     width: 280px;
     height: 375px;
     margin-left: 4%;
   }
-  .product--4 {
+  .product .product--4 {
     width: 282px;
     height: 230px;
   }
@@ -841,6 +881,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /*}*/
 }
 
 .interaction__images {
@@ -1042,12 +1083,10 @@ body {
 
 @media (max-width: 900px) {
   .interaction {
+    /*.interaction{*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
