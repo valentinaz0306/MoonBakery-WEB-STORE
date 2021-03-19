@@ -28,6 +28,19 @@ body {
   margin-left: 4%;
 }
 
+@media (max-width: 900px) {
+  .shop--cookies {
+    font-size: 30px;
+    margin-top: 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -403,6 +416,9 @@ body {
   .advertising__btn {
     margin-left: 22%;
     margin-top: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -742,6 +758,80 @@ body {
 .product--4 {
   width: 312px;
   height: 230px;
+}
+
+@media (max-width: 900px) {
+  .product {
+    /* CARD 1*/
+    /* CARD 2*/
+    /* CARD 3*/
+    /* CARD 4*/
+  }
+  .product__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .product__modal1 {
+    background-color: #e7e3da;
+    margin-top: 4%;
+    width: 280px;
+    height: 375px;
+    margin-left: 4%;
+  }
+  .product--1 {
+    width: 280px;
+    height: 230px;
+  }
+  .product__title {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 3px;
+  }
+  .product__name {
+    font-size: 20px;
+  }
+  .product__box1 {
+    font-size: 10px;
+  }
+  .product__price {
+    font-size: 10px;
+    margin-left: 74px;
+    margin-top: 35px;
+  }
+  .product__modal2 {
+    background-color: #e6ebee;
+    margin-top: 4%;
+    width: 280px;
+    height: 375px;
+    margin-left: 4%;
+  }
+  .product--2 {
+    width: 280px;
+    height: 230px;
+  }
+  .product__modal3 {
+    background-color: #f1ecf7;
+    margin-top: 4%;
+    width: 280px;
+    height: 375px;
+    margin-left: 4%;
+  }
+  .product--3 {
+    width: 280px;
+    height: 230px;
+  }
+  .product__modal4 {
+    background-color: #f8f4f1;
+    margin-top: 4%;
+    width: 280px;
+    height: 375px;
+    margin-left: 4%;
+  }
+  .product--4 {
+    width: 282px;
+    height: 230px;
+  }
 }
 
 .interaction {
