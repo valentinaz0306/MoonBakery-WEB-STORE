@@ -73,64 +73,62 @@
         height:410px;   
         left: 45px;
     }
-    @media(max-width: 1200px){
-
-        .attributes{
-        
-            &__cookie{
-                display: none;
-            }
-        
-            &__flour{
-
-                display: none;
-            }
-
-            &_bigtitle{
-
-                font-size: 30px;
-                margin-top:11%; 
-                margin-left: 9%;
-            }
-          
-            
-            &__line1{
-        
-              margin-top: 0.5%;
-              width: 97px; 
-              height: 2px;  
-              margin-right: 1%;
-              background-color:  rgb(17, 20,117);
-            }
-        
-            &__line2{
-                
-                margin-top: 0.5%;
-                width: 97px; 
-                height: 2px;  
-                margin-left: 1%;
-                background-color:  rgb(17, 20,117);
-              }
-        
-            &__subtitle{
-
-                margin-top: 1%;
-                font-size: 18px;    
-            }   
-        
-            &__text{
-            margin-top: 5%;
-            font-size:16px;     
-            }
-
-
-        }
-    }
-
-
-
-
-
+    
 }
+
+@media(max-width: 1200px){
+
+    .attributes{
+    
+        &__cookie{
+            display: none;
+        }
+    
+        &__flour{
+
+            display: none;
+        }
+
+        &_bigtitle{
+
+            font-size: 30px;
+            margin-top:11%; 
+            margin-left: 9%;
+        }
+      
+        
+        &__line1{
+    
+          margin-top: 0.5%;
+          width: 97px; 
+          height: 2px;  
+          margin-right: 1%;
+          background-color:  rgb(17, 20,117);
+        }
+    
+        &__line2{
+            
+            margin-top: 0.5%;
+            width: 97px; 
+            height: 2px;  
+            margin-left: 1%;
+            background-color:  rgb(17, 20,117);
+          }
+    
+        &__subtitle{
+
+            margin-top: 1%;
+            font-size: 18px;    
+        }   
+    
+        &__text{
+        margin-top: 5%;
+        font-size:16px;     
+        }
+
+
+    }
+}
+
 
 
