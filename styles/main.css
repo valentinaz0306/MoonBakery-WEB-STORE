@@ -631,6 +631,91 @@ body {
   height: 30px;
 }
 
+@media (max-width: 900px) {
+  .footer .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 6%;
+    height: 550px;
+    background: #111475;
+    width: 100%;
+  }
+  .footer .footer__news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -30%;
+  }
+  .footer .footer__info {
+    font-size: 25px;
+    text-align: left;
+    margin-top: 0%;
+    margin-left: 8%;
+    height: 14%;
+    width: 170%;
+    line-height: 1;
+  }
+  .footer .footer__input {
+    width: 70%;
+    height: 20%;
+    margin-left: 8%;
+    margin-bottom: 23%;
+  }
+  .footer .footer__links {
+    margin-top: 40%;
+    background-color: darkolivegreen;
+    margin-right: 0%;
+    width: 300px;
+    height: 300px;
+  }
+  .footer .footer__containerLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    margin-left: 0%;
+  }
+  .footer .footer__link--one {
+    height: 290px;
+    width: 600px;
+    font-size: 11px;
+    margin-top: 11%;
+    margin-right: 40%;
+    display: -ms-grid;
+    display: grid;
+    text-align: left;
+  }
+  .footer .footer__link--two {
+    height: 290px;
+    width: 700px;
+    font-size: 11px;
+    margin-top: 11%;
+    margin-left: 50%;
+    display: -ms-grid;
+    display: grid;
+    text-align: left;
+  }
+  .footer .footer__social {
+    display: none;
+    margin-top: 33%;
+    width: 220px;
+    margin-right: 8%;
+    height: 6%;
+  }
+}
+
 .product {
   /* CARD 1*/
   /* CARD 2*/
