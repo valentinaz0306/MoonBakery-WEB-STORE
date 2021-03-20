@@ -510,17 +510,20 @@ body {
 .gallery__vertical {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .gallery__p2 {
-  width: 440px;
+  width: 460px;
   height: 270px;
   margin-left: 4%;
   margin-right: 4%;
 }
 
 .gallery__p3 {
-  width: 440px;
+  width: 460px;
   height: 250px;
   margin-top: 6%;
   margin-left: 4%;
