@@ -36,6 +36,23 @@
         justify-content: space-around;
         width: 25%;
     }
+
+    &__shop:hover{
+        text-decoration-line: underline;   
+      } 
+
+      &__location:hover{
+        text-decoration-line: underline;   
+      } 
+
+      &__grocery:hover{
+        text-decoration-line: underline;   
+      } 
+
+      &__delivery:hover{
+        text-decoration-line: underline;   
+      } 
+
     &__secOptions {
         display: flex;
         font-family: "Oswald";
@@ -75,30 +92,39 @@
         width: 276px;
         height: 73px;
     }
+
+    &__btn:hover{
+        background-color: rgb(17, 20, 117);
+        color: white;
+    }
+   
+}
+
     /* MOBILE*/
-}
 
-.header__mobile {
-    display: none;
-    .header__menu {
-        padding: 20px;
-        width: 40px;
-        height: 40px;
+    .header__mobile {
+        display: none;
+        .header__menu {
+            padding: 20px;
+            width: 40px;
+            height: 40px;
+        }
     }
-}
 
-.header__secOptions__mobile {
-    display: none;
-    .header__user {
-        padding: 20px;
-        width: 40px;
-        height: 40px;
+    .header__secOptions__mobile {
+        display: none;
+        .header__user {
+            padding: 20px;
+            width: 40px;
+            height: 40px;
+        }
     }
-}
 
 @media(max-width: 900px) {
+
     .header {
         height: 660px;
+
         &__logo {
             height: 80px;
         }
@@ -119,6 +145,7 @@
         &__secOptions__mobile {
             display: block;
         }
+        
         &__textBanner {
             font-size: 50px;
             margin-top: 25%;

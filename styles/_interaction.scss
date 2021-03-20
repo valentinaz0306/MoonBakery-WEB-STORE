@@ -1,380 +1,286 @@
-.interaction{
-
-display: flex;
-justify-content: center;
-
-    &__images{
-           
-        margin-left: 8%;
+.interaction {
+    display: flex;
+    justify-content: center;
+    &__images {
         margin-top: 6%;
         position: relative;
-        width:550px;
+        width: 550px;
         height: 600px;
         display: flex;
         flex-direction: column;
-       align-items: center;
-       justify-content: center;
-    
+        align-items: center;
+        justify-content: center;
     }
-    &__img1{
+    &__img1 {
         position: absolute;
         width: 390px;
         height: 390px;
-}
-    &__product{
-
+    }
+    &__product {
         border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px; 
-        width:550px;
+        border-bottom-left-radius: 10px;
+        width: 550px;
         height: 600px;
     }
-
-    &__container{
-        
+    &__container {
         background-color: rgb(236, 241, 231);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         width: 40%;
         margin-top: 6%;
-        margin-right: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    &__question{
-
+    &__question {
         font-family: "PT Mono";
-        color:  rgb(17, 20,117);
+        color: rgb(17, 20, 117);
         font-size: 12px;
         text-align: center;
         margin-top: 45px;
-
     }
-
-    &__title{
-
+    &__title {
         font-family: "Oswald";
-        color:  rgb(17, 20,117);
+        color: rgb(17, 20, 117);
         font-size: 54px;
         text-align: center;
         margin-top: 17px;
         line-height: 1;
-        
     }
-
-
-    &__flavour{
-
+    &__flavour {
         font-family: "Chivo";
-        color:  rgb(17, 20,117);
+        color: rgb(17, 20, 117);
         font-size: 18px;
         text-align: center;
         margin-top: 50px;
-        
     }
-
-    &__checkbox1{
-
+    &__checkbox1 {
         display: flex;
         justify-content: center;
         margin-top: 3%;
     }
-
-    &__check1{
-        
+    &__check1 {
         margin-top: 30px;
         height: 20px;
         width: 20px;
-        background-color:white;
+        background-color: white;
         border-radius: 50%;
     }
-
-    &__vainilla1{
-
+    &__vainilla1 {
         font-family: "PT Mono";
         font-style: italic;
-        color:  rgb(17, 20,117);
+        color: rgb(17, 20, 117);
         font-size: 21px;
         text-align: center;
         margin-top: 26px;
         margin-left: 25px;
     }
-
-
-    &__check2{
-
+    &__check2 {
         margin-top: 30px;
         margin-left: 6%;
         height: 20px;
         width: 20px;
-        background-color:white;
+        background-color: white;
         border-radius: 50%;
     }
-
-    &__chocolate1{
-
+    &__chocolate1 {
         font-family: "PT Mono";
         font-style: italic;
-        color:  rgb(17, 20,117);
+        color: rgb(17, 20, 117);
         font-size: 21px;
         text-align: center;
         margin-top: 26px;
         margin-left: 25px;
     }
-
-    &__chips{
-
+    &__chips {
         font-family: "Chivo";
-        color:  rgb(17, 20,117);
+        color: rgb(17, 20, 117);
         font-size: 18px;
         text-align: center;
         margin-top: 60px;
     }
-
-    &__checkbox2{
-
+    &__checkbox2 {
         display: flex;
         justify-content: center;
         margin-top: 3%;
     }
-
-    &__check3{
-        
+    &__check3 {
         margin-top: 30px;
         height: 20px;
         width: 20px;
-        background-color:white;
+        background-color: white;
         border-radius: 50%;
     }
-
-    &__vainilla2{
-
+    &__vainilla2 {
         font-family: "PT Mono";
         font-style: italic;
-        color:  rgb(17, 20,117);
+        color: rgb(17, 20, 117);
         font-size: 21px;
         text-align: center;
         margin-top: 26px;
         margin-left: 25px;
     }
-
-    &__check4{
-
+    &__check4 {
         margin-top: 30px;
         margin-left: 6%;
         height: 20px;
         width: 20px;
-        background-color:white;
+        background-color: white;
         border-radius: 50%;
     }
-
-    &__chocolate2{
-
+    &__chocolate2 {
         font-family: "PT Mono";
         font-style: italic;
-        color:  rgb(17, 20,117);
+        color: rgb(17, 20, 117);
         font-size: 21px;
         text-align: center;
         margin-top: 26px;
         margin-left: 25px;
     }
-
-    &__btn{
-        
+    &__btn {
         margin-top: 12%;
-        margin-left: 20%;
         display: flex;
         justify-content: center;
-        width: 375px;
+        width: 300px;
         height: 50px;
         border-radius: 8px;
-        background-color:  rgb(17, 20,117);  
-      
-      }
-
-      &__textbtn{
-    
+        background-color: transparent;
+        border-color: rgb(17, 20, 117);
+        border-width: 2px;
+         border-style: solid;
         font-family: "Oswald";
         display: flex;
-        color: white;
+        color:rgb(17, 20, 117);
         font-size: 20px;
         align-items: center;
-        
+    }
+    &__btn:hover{
+        background-color:rgb(17, 20, 117);
+        color:white;
       }
-      
 }
 
-@media(max-width: 900px){
-        
-    .interaction{
-
-    display: flex;
-    flex-direction: column;
-    
-        &__images{
-               
-            margin-left: 20%;
+@media(max-width: 1050px) {
+    .interaction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        &__images {
             margin-top: 12%;
-            width: 60%;
+            width: 86%;
             height: 430px;
-        
+            border-top-left-radius: 10px;
         }
-        &__img1{
-
+        &__img1 {
             width: 300px;
             height: 300px;
-    }
-        &__product{
-    
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 0px; 
-            width:430px;
-            height: 430px;   
         }
-
-        &__container{
-
+        &__product {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            width: 100%;
+            height: 430px;
+        }
+        &__container {
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;
             width: 86%;
             margin-top: 0%;
-            margin-left: 7%;
         }
-    
-        &__question{
-    
+        &__question {
             font-size: 10px;
             text-align: center;
             margin-top: 45px;
-    
         }
-    
-        &__title{
-    
+        &__title {
             font-size: 34px;
             text-align: center;
             margin-top: 13px;
-            
         }
-    
-    
-        &__flavour{
-    
+        &__flavour {
             font-size: 14px;
             text-align: center;
             margin-top: 30px;
-            
         }
-
-        &__checkbox1{
-
+        &__checkbox1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-top: 0%;
         }
-    
-        &__check1{
-            
+        &__check1 {
             position: absolute;
             margin-top: 0px;
-            margin-left: 30%;
-            margin-bottom: 4%;
+            margin-left: 100px;
+            margin-bottom: 20px;
             height: 15px;
             width: 15px;
-         
         }
-    
-        &__vainilla1{
-    
+        &__vainilla1 {
             font-size: 16px;
             text-align: center;
             margin-top: 18px;
             margin-left: 0px;
         }
-    
-    
-        &__check2{
-    
+        &__check2 {
             position: absolute;
-            margin-top: 11%;
-            margin-left: 30%;
+            margin-top: 54px;
+            margin-left: 100px;
             height: 15px;
             width: 15px;
         }
-    
-        &__chocolate1{
-    
+        &__chocolate1 {
             font-size: 16px;
             text-align: center;
             margin-top: 18px;
             margin-left: 0px;
         }
-    
-        &__chips{
-
+        &__chips {
             font-size: 14px;
             text-align: center;
             margin-top: 30px;
         }
-    
-        &__checkbox2{
-    
+        &__checkbox2 {
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-top: 0%;
         }
-    
-        &__check3{
-            
+        &__check3 {
             position: absolute;
             margin-top: 0px;
-            margin-left: 30%;
-            margin-bottom: 4%;
+            margin-left: 100px;
+            margin-bottom: 20px;
             height: 15px;
             width: 15px;
         }
-    
-        &__vainilla2{
-    
+        &__vainilla2 {
             font-size: 16px;
             text-align: center;
             margin-top: 18px;
             margin-left: 0px;
         }
-    
-        &__check4{
-    
+        &__check4 {
             position: absolute;
-            margin-top: 11%;
-            margin-left: 30%;
+            margin-top: 54px;
+            margin-left: 100px;
             height: 15px;
             width: 15px;
         }
-    
-        &__chocolate2{
-    
+        &__chocolate2 {
             font-size: 16px;
             text-align: center;
             margin-top: 18px;
             margin-left: 0px;
-        
         }
-    
-        &__btn{
-            
+        &__btn {
             margin-top: 8%;
             margin-bottom: 7%;
-            margin-left: 22%;
             width: 230px;
             height: 40px;
-                
-          
-          }
-    
-          &__textbtn{
-
-            font-size: 16px;  
-          }
+            font-size: 16px;
         }
     }
-  
+}

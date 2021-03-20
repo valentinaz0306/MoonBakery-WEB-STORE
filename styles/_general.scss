@@ -1,42 +1,39 @@
-*{
+* {
     margin: 0;
-}
-body{
-    background-color:white;
+    box-sizing: border-box;
 }
 
-.add--photo{
+body {
+    background-color: white;
+}
+
+.add--photo {
     margin-top: 6%;
     margin-left: 4%;
     text-decoration: underline;
     font-style: italic;
     font-family: "Chivo";
-    font-size: 20px; 
-    color: rgb(17, 20,117);
+    font-size: 20px;
+    color: rgb(17, 20, 117);
+}
+
+.shop--cookies {
+    font-family: "Oswald";
+    color: rgb(17, 20, 117);
+    font-size: 50px;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+@media(max-width: 900px) {
+    .shop--cookies {
+        font-size: 30px;
+        margin-top: 9%;
+        display: flex;
+        justify-content: center;
     }
-
-.shop--cookies{
-
-     font-family: "Oswald";
-     color: rgb(17, 20,117);
-     font-size: 50px;
-     margin-top:5%;  
-     margin-left: 4%;
+    .add--photo {
+        margin-top: 8%;
+        font-size: 14px;
     }
-    @media(max-width: 900px){
-
-        .shop--cookies{
-
-            font-size: 30px;
-            margin-top:9%;  
-            display: flex;
-            justify-content: center;
-           }
-
-           .add--photo{
-
-            margin-top: 8%;
-            font-size: 14px; 
-           }
-        
-    }
+}
