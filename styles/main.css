@@ -15,11 +15,15 @@ body {
 .add--photo {
   margin-top: 6%;
   margin-left: 4%;
-  text-decoration: underline;
   font-style: italic;
   font-family: "Chivo";
   font-size: 20px;
   color: #111475;
+}
+
+.add--photo:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .shop--cookies {
@@ -1110,7 +1114,7 @@ body {
 
 .interaction__check2 {
   margin-top: 30px;
-  margin-left: 6%;
+  margin-left: 30px;
   height: 20px;
   width: 20px;
   background-color: white;
@@ -1124,7 +1128,7 @@ body {
   font-size: 21px;
   text-align: center;
   margin-top: 26px;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .interaction__chips {
@@ -1149,6 +1153,7 @@ body {
   margin-top: 30px;
   height: 20px;
   width: 20px;
+  margin-left: 30px;
   background-color: white;
   border-radius: 50%;
 }
@@ -1165,7 +1170,7 @@ body {
 
 .interaction__check4 {
   margin-top: 30px;
-  margin-left: 6%;
+  margin-left: 30px;
   height: 20px;
   width: 20px;
   background-color: white;
@@ -1179,7 +1184,7 @@ body {
   font-size: 21px;
   text-align: center;
   margin-top: 26px;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .interaction__btn {
