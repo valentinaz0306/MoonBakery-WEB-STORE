@@ -39,6 +39,9 @@
         border-radius: 2px;
         outline-color: whitesmoke;
     }
+    ::placeholder{
+        color: white;
+    }
     &__links {
         width: 60%;
         display: flex;
@@ -144,6 +147,7 @@
         }
         &__socialcontainer {
             justify-content: center;
+            width: 530px;
         }
         &__social {
             margin-left: 0px;

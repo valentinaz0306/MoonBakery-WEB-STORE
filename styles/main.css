@@ -43,6 +43,7 @@ body {
   }
   .add--photo {
     margin-top: 8%;
+    margin-left: 35px;
     font-size: 14px;
   }
 }
@@ -532,35 +533,33 @@ body {
   margin-right: 4%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .gallery__p1 {
-    width: 200px;
+    width: 380px;
     height: 275px;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 35px;
+    margin-right: 14px;
   }
   .gallery__vertical {
     display: -ms-grid;
     display: grid;
+    margin-right: 70px;
   }
   .gallery__p2 {
     width: 220px;
     height: 135px;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   .gallery__p3 {
     width: 220px;
     height: 125px;
     margin-top: 6%;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   .gallery__p4 {
-    width: 200px;
-    height: 275px;
-    margin-right: 4%;
-    margin-left: 4%;
+    display: none;
   }
 }
 
@@ -621,6 +620,22 @@ body {
   border-right: transparent;
   border-radius: 2px;
   outline-color: whitesmoke;
+}
+
+.footer ::-webkit-input-placeholder {
+  color: white;
+}
+
+.footer :-ms-input-placeholder {
+  color: white;
+}
+
+.footer ::-ms-input-placeholder {
+  color: white;
+}
+
+.footer ::placeholder {
+  color: white;
 }
 
 .footer__links {
@@ -778,6 +793,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 530px;
   }
   .footer__social {
     margin-left: 0px;
@@ -1176,7 +1192,7 @@ body {
   border-radius: 8px;
   background-color: transparent;
   border-color: #111475;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   font-family: "Oswald";
   display: flex;
