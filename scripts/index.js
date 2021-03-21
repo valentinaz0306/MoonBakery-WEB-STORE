@@ -18,17 +18,8 @@ function handleCheckBox1() {
         checkBox2.checked = false;
     }
 
-    console.log("ANTES DE NEGACION");
-    console.log("4"+checkBox4.checked);
-    console.log("2"+checkBox2.checked);
-    console.log("3"+checkBox3.checked);
-    console.log("DESPUES DE NEGACION");
-    console.log("4"+(!checkBox4.checked));
-    console.log("2"+(!checkBox2.checked));
-    console.log("3"+ (!checkBox3.checked));
-
     if (!checkBox4.checked && !checkBox2.checked && !checkBox3.checked && !checkBox1.checked) {
-        console.log("Errorrrr");
+
         image.src = '../img/vainilla_cookie.png';
     }
 }
@@ -39,7 +30,7 @@ function handleCheckBox2() {
         checkBox1.checked = false;
     }
     if (!checkBox4.checked && !checkBox1.checked && !checkBox3.checked && !checkBox2.checked) {
-        console.log("Errorrrr");
+
         image.src = '../img/vainilla_cookie.png';
     }
 }
@@ -50,7 +41,7 @@ function handleCheckBox3() {
         checkBox4.checked = false;
     }
     if (!checkBox4.checked && !checkBox1.checked && !checkBox2.checked && !checkBox3.checked) {
-        console.log("Errorrrr");
+
         image.src = '../img/vainilla_cookie.png';
     }
 }
@@ -61,7 +52,7 @@ function handleCheckBox4() {
         checkBox3.checked = false;
     }
     if (!checkBox1.checked && !checkBox2.checked && !checkBox3.checked && !checkBox4.checked) {
-        console.log("Errorrrr");
+
         image.src = '../img/vainilla_cookie.png';
     }
 }
@@ -83,7 +74,7 @@ function makeCookie() {
 
             case 'vanilla':
                 if (chips === 'chocolate') {
-                    url = '../img/vainilla_chocolate_chip.png';
+                    url = '/MoonBakery-WEB-STORE/img/vainilla_chocolate_chip.png';
                 } else {
                     url = '../img/vainilla_vainilla_chip.png';
                 }
