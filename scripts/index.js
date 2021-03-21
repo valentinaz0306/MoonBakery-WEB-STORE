@@ -63,31 +63,24 @@ button.addEventListener('click', makeCookie);
 //Algorithm
 function makeCookie() {
 
-    console.log('MakeCookie');    
-    
     if (((checkBox1.checked) || (checkBox2.checked)) && ((checkBox3.checked) || (checkBox4.checked))) {
-
-
-    console.log('dentro del if');    
 
         switch (dough) {
 
             case 'vanilla':
-                console.log('dentro del siwtch1');     
                 if (chips === 'chocolate') {
-                    url = '/MoonBakery-WEB-STORE/img/vainilla_vainilla_chip.png';
+                    url = '../img/vainilla_chocolate_chip.png';
                 } else {
-                    url = '/MoonBakery-WEB-STORE/img/vainilla_vainilla_chip.png';
+                    url = '../img/vainilla_vainilla_chip.png';
                 }
 
                 break;
 
             case 'chocolate':
-                console.log('dentro del siwtch2');  
                 if (chips === 'chocolate') {
-                    url = '/MoonBakery-WEB-STORE/img/vainilla_vainilla_chip.png';
+                    url = '../img/chocolate_chocolate_chip.png';
                 } else {
-                    url = '/MoonBakery-WEB-STORE/img/vainilla_vainilla_chip.png';
+                    url = '../img/chocolate_vainilla_chip.png';
                 }
 
                 break;
