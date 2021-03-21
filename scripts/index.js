@@ -69,18 +69,18 @@ function makeCookie() {
 
             case 'vanilla':
                 if (chips === 'chocolate') {
-                    url = '../img/vainilla_chocolate_chip.png';
+                    url = '.../img/vainilla_chocolate_chip.png';
                 } else {
-                    url = '../img/vainilla_vainilla_chip.png';
+                    url = '.../img/vainilla_vainilla_chip.png';
                 }
 
                 break;
 
             case 'chocolate':
                 if (chips === 'chocolate') {
-                    url = '../img/chocolate_chocolate_chip.png';
+                    url = '.../img/chocolate_chocolate_chip.png';
                 } else {
-                    url = '../img/chocolate_vainilla_chip.png';
+                    url = '.../img/chocolate_vainilla_chip.png';
                 }
 
                 break;
