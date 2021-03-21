@@ -76,16 +76,16 @@ function makeCookie() {
                 if (chips === 'chocolate') {
                     url = '/MoonBakery-WEB-STORE/img/vainilla_chocolate_chip.png';
                 } else {
-                    url = '../img/vainilla_vainilla_chip.png';
+                    url = '/MoonBakery-WEB-STORE/img/vainilla_vainilla_chip.png';
                 }
 
                 break;
 
             case 'chocolate':
                 if (chips === 'chocolate') {
-                    url = '../img/chocolate_chocolate_chip.png';
+                    url = '/MoonBakery-WEB-STORE/img/chocolate_chocolate_chip.png';
                 } else {
-                    url = '../img/chocolate_vainilla_chip.png';
+                    url = '/MoonBakery-WEB-STORE/img/chocolate_vainilla_chip.png';
                 }
 
                 break;
