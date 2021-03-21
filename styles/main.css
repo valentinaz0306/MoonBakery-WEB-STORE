@@ -829,6 +829,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.product__firstmodals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 60px;
+}
+
+.product__secmodals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
 }
 
 .product__modal1 {
@@ -836,7 +854,6 @@ body {
   background-color: #e7e3da;
   width: 310px;
   height: 400px;
-  margin-left: 4%;
   border-radius: 6px;
   -webkit-box-shadow: 2px 2px 10px #cccbcb;
           box-shadow: 2px 2px 10px #cccbcb;
@@ -891,7 +908,7 @@ body {
   background-color: #e6ebee;
   width: 310px;
   height: 400px;
-  margin-left: 2%;
+  margin-left: 20px;
   border-radius: 6px;
   -webkit-box-shadow: 2px 2px 10px #cccbcb;
           box-shadow: 2px 2px 10px #cccbcb;
@@ -907,7 +924,7 @@ body {
   background-color: #f1ecf7;
   width: 310px;
   height: 400px;
-  margin-left: 2%;
+  margin-left: 3px;
   border-radius: 6px;
   -webkit-box-shadow: 2px 2px 10px #cccbcb;
           box-shadow: 2px 2px 10px #cccbcb;
@@ -923,7 +940,7 @@ body {
   background-color: #f8f4f1;
   width: 310px;
   height: 400px;
-  margin-left: 2%;
+  margin-left: 22px;
   border-radius: 6px;
   -webkit-box-shadow: 2px 2px 10px #cccbcb;
           box-shadow: 2px 2px 10px #cccbcb;
@@ -934,7 +951,7 @@ body {
   height: 230px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .product {
     /* CARD 1*/
     /* CARD 2*/
@@ -945,17 +962,30 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product__firstmodals {
+    margin-left: 0px;
+  }
+  .product__secmodals {
+    margin-left: 0px;
   }
   .product__modal1 {
     background-color: #e7e3da;
     margin-top: 4%;
-    width: 280px;
-    height: 375px;
-    margin-left: 4%;
+    width: 220px;
+    height: 325px;
+    margin-left: 0px;
   }
   .product--1 {
-    width: 280px;
-    height: 230px;
+    width: 220px;
+    height: 180px;
   }
   .product__title {
     font-size: 10px;
@@ -966,45 +996,45 @@ body {
     font-size: 20px;
   }
   .product__box1 {
-    font-size: 10px;
+    font-size: 7px;
   }
   .product__price {
-    font-size: 10px;
+    font-size: 7px;
     margin-left: 74px;
     margin-top: 35px;
   }
   .product__modal2 {
     background-color: #e6ebee;
     margin-top: 4%;
-    width: 280px;
-    height: 375px;
-    margin-left: 4%;
+    width: 220px;
+    height: 325px;
+    margin-left: 15px;
   }
   .product--2 {
-    width: 280px;
-    height: 230px;
+    width: 220px;
+    height: 180px;
   }
   .product__modal3 {
     background-color: #f1ecf7;
     margin-top: 4%;
-    width: 280px;
-    height: 375px;
-    margin-left: 4%;
+    width: 220px;
+    height: 325px;
+    margin-left: 0px;
   }
   .product--3 {
-    width: 280px;
-    height: 230px;
+    width: 220px;
+    height: 180px;
   }
   .product__modal4 {
     background-color: #f8f4f1;
     margin-top: 4%;
-    width: 280px;
-    height: 375px;
-    margin-left: 4%;
+    width: 220px;
+    height: 325px;
+    margin-left: 15px;
   }
   .product--4 {
-    width: 282px;
-    height: 230px;
+    width: 222px;
+    height: 180px;
   }
 }
 
