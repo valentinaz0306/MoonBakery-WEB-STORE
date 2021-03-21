@@ -1,4 +1,3 @@
-
 .header {
     display: flex;
     flex-direction: column;
@@ -12,9 +11,10 @@
         height: 100px;
     }
     &__menu {
-        margin-top: -2%;
         width: 40px;
-        height: 40px;
+        height: 3px;
+        margin-top: 5px;
+        margin-left: 15px;
     }
     &__user {
         margin-top: -2%;
@@ -36,23 +36,18 @@
         justify-content: space-around;
         width: 25%;
     }
-
-    &__shop:hover{
-        text-decoration-line: underline;   
-      } 
-
-      &__location:hover{
-        text-decoration-line: underline;   
-      } 
-
-      &__grocery:hover{
-        text-decoration-line: underline;   
-      } 
-
-      &__delivery:hover{
-        text-decoration-line: underline;   
-      } 
-
+    &__shop:hover {
+        text-decoration-line: underline;
+    }
+    &__location:hover {
+        text-decoration-line: underline;
+    }
+    &__grocery:hover {
+        text-decoration-line: underline;
+    }
+    &__delivery:hover {
+        text-decoration-line: underline;
+    }
     &__secOptions {
         display: flex;
         font-family: "Oswald";
@@ -92,40 +87,40 @@
         width: 276px;
         height: 73px;
     }
-
-    &__btn:hover{
+    &__btn:hover {
         background-color: rgb(17, 20, 117);
         color: white;
     }
-   
 }
 
-    /* MOBILE*/
 
-    .header__mobile {
-        display: none;
-        .header__menu {
-            padding: 20px;
-            width: 40px;
-            height: 40px;
-        }
-    }
+/* MOBILE*/
 
-    .header__secOptions__mobile {
-        display: none;
-        .header__user {
-            padding: 20px;
-            width: 40px;
-            height: 40px;
-        }
+.header__mobile {
+    display: none;
+    height: auto;
+    margin-top: 21px;
+}
+
+.header__menu {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.header_secOptions_mobile {
+    display: none;
+    .header__user {
+        padding: 20px;
+        width: 40px;
+        height: 40px;
     }
+}
 
 @media(max-width: 900px) {
-
-
     .header {
         height: 660px;
-
         &__logo {
             height: 80px;
         }
@@ -134,7 +129,6 @@
             width: 35px;
             height: 35px;
             margin-right: 15px;
-
         }
         &__firstOptions {
             display: none;
@@ -147,10 +141,9 @@
             position: relative;
             z-index: 10;
         }
-        &__secOptions__mobile {
+        &_secOptions_mobile {
             display: block;
         }
-        
         &__textBanner {
             font-size: 50px;
             margin-top: 25%;
@@ -164,8 +157,8 @@
     }
 }
 
-@media(min-width: 900px){
-    .header_secOptions_mobile{
+@media(min-width: 900px) {
+    .header_secOptions_mobile {
         display: none;
     }
 }
