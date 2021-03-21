@@ -20,7 +20,7 @@ function handleCheckBox1() {
 
     if (!checkBox4.checked && !checkBox2.checked && !checkBox3.checked && !checkBox1.checked) {
 
-        image.src = '../img/vainilla_cookie.png';
+        image.src = '/MoonBakery-WEB-STORE/img/vainilla_cookie.png';
     }
 }
 
@@ -31,7 +31,7 @@ function handleCheckBox2() {
     }
     if (!checkBox4.checked && !checkBox1.checked && !checkBox3.checked && !checkBox2.checked) {
 
-        image.src = '../img/vainilla_cookie.png';
+        image.src = '/MoonBakery-WEB-STORE/img/vainilla_cookie.png';
     }
 }
 
@@ -42,7 +42,7 @@ function handleCheckBox3() {
     }
     if (!checkBox4.checked && !checkBox1.checked && !checkBox2.checked && !checkBox3.checked) {
 
-        image.src = '../img/vainilla_cookie.png';
+        image.src = '/MoonBakery-WEB-STORE/img/vainilla_cookie.png';
     }
 }
 
@@ -53,7 +53,7 @@ function handleCheckBox4() {
     }
     if (!checkBox1.checked && !checkBox2.checked && !checkBox3.checked && !checkBox4.checked) {
 
-        image.src = '../img/vainilla_cookie.png';
+        image.src = '/MoonBakery-WEB-STORE/img/vainilla_cookie.png';
     }
 }
 
