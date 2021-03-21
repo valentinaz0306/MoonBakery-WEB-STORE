@@ -17,7 +17,18 @@ function handleCheckBox1() {
     if (checkBox2.checked) {
         checkBox2.checked = false;
     }
-    if (!checkBox4.checked && !checkBox2.checked && !checkBox3.checked) {
+
+    console.log("ANTES DE NEGACION");
+    console.log("4"+checkBox4.checked);
+    console.log("2"+checkBox2.checked);
+    console.log("3"+checkBox3.checked);
+    console.log("DESPUES DE NEGACION");
+    console.log("4"+(!checkBox4.checked));
+    console.log("2"+(!checkBox2.checked));
+    console.log("3"+ (!checkBox3.checked));
+
+    if (!checkBox4.checked && !checkBox2.checked && !checkBox3.checked && !checkBox1.checked) {
+        console.log("Errorrrr");
         image.src = '../img/vainilla_cookie.png';
     }
 }
@@ -27,7 +38,8 @@ function handleCheckBox2() {
     if (checkBox1.checked) {
         checkBox1.checked = false;
     }
-    if (!checkBox4.checked && !checkBox1.checked && !checkBox3.checked) {
+    if (!checkBox4.checked && !checkBox1.checked && !checkBox3.checked && !checkBox2.checked) {
+        console.log("Errorrrr");
         image.src = '../img/vainilla_cookie.png';
     }
 }
@@ -37,7 +49,8 @@ function handleCheckBox3() {
     if (checkBox4.checked) {
         checkBox4.checked = false;
     }
-    if (!checkBox4.checked && !checkBox1.checked && !checkBox2.checked) {
+    if (!checkBox4.checked && !checkBox1.checked && !checkBox2.checked && !checkBox3.checked) {
+        console.log("Errorrrr");
         image.src = '../img/vainilla_cookie.png';
     }
 }
@@ -47,7 +60,8 @@ function handleCheckBox4() {
     if (checkBox3.checked) {
         checkBox3.checked = false;
     }
-    if (!checkBox1.checked && !checkBox2.checked && !checkBox3.checked) {
+    if (!checkBox1.checked && !checkBox2.checked && !checkBox3.checked && !checkBox4.checked) {
+        console.log("Errorrrr");
         image.src = '../img/vainilla_cookie.png';
     }
 }
