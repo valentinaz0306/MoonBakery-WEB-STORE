@@ -60,7 +60,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("../img/banner.png");
   width: 100%;
   background-size: cover;
   height: 700px;
@@ -1405,5 +1404,30 @@ body {
     height: 40px;
     font-size: 16px;
   }
+}
+
+.carrousel {
+  overflow: hidden;
+  height: 700px;
+}
+
+.carrousel__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.carrousel__img {
+  height: 100%;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

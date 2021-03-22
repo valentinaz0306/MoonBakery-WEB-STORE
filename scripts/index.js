@@ -97,7 +97,17 @@ function makeCookie() {
     } else {
         alert('Please select all the options');
     }
-
-
-
 }
+
+const slider= document.querySelector('.carrousel__slider');
+let currentSlider=0;
+
+function handleInterval(){
+     currentSlider ++;
+     if(currentSlider>= 3){
+         
+         currentSlider=0;
+     }
+    slider.style.transform=`translate(-${ 100 * currentSlider }%,0px)`;
+}
+setInterval(handleInterval, 1000);
