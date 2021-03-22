@@ -2,13 +2,14 @@
 
     display: flex;
     justify-content: center;
+   
 
     &_bigtitle{
 
         font-family: "Oswald";
         color: rgb(17, 20,117);
         font-size: 50px;
-        margin-top:13%;  
+        margin-top:10%;  
     }
   
     &__container{

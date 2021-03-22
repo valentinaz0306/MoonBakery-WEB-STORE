@@ -1,12 +1,12 @@
 
 .header {
     display: flex;
+    position: absolute;
     flex-direction: column;
-   
-   
     width: 100%;
     background-size: cover;
     height: 700px;
+
     &__logo {
         position: relative;
         margin-top: 0.5%;
