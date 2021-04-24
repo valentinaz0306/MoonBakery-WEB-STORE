@@ -1,54 +1,59 @@
-.cookie{
 
+.cookie {
     align-items: center;
-    background-color: yellow;
+    position: relative;
     width: 260px;
     height: 350px;
-  
+    margin-top: 60px;
 
-
-    &__img{
-
+    &__img {
         width: 260px;
         height: 350px;
-        margin-top: 700px;   
     }
-
-    &__star{
+    &__star {
         width: 18px;
         height: 18px;
+        margin-top: 2px;    
     }
-    &__information{
-        bottom: -30%;
+    &__starContainer {
+      margin-right: 70px;    
+    }
+    &__information {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: 120px;
+    }
+    &__information2 {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         position: absolute;
-        background-color: yellowgreen;     
+        top: 125px;
+        margin-top: 190px;
+        left: 0;
+        right: 0;
     }
-
-    &__information2{
-       
-        justify-content: center;
-        position: absolute;
-        background-color: yellowgreen;     
-    }
-
-    &__subtitle{
-
+    &__subtitle {
         font-family: "PT Mono";
         color: white;
         font-size: 12px;
         text-align: center;
-
     }
-
-    &__name{
-
+    &__name {
         font-family: "Oswald";
-        color:  white;
-        font-size: 30px;
+        color: white;
+        font-size: 35px;
         margin-top: 5px;
         text-align: center;
         line-height: 1;
-
+    }
+    &__price {
+        margin-left: 10px;
+        margin-right: 8px;
+        font-size: 15px;
+        font-family: "Oswald";
+        color: white;
     }
 }

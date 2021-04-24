@@ -1442,7 +1442,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1583,11 +1582,11 @@ body {
 }
 
 /* MOBILE*/
-.store__secOptions__mobile {
+.store_secOptions_mobile {
   display: none;
 }
 
-.store__secOptions__mobile .store__user2 {
+.store_secOptions_mobile .store__user2 {
   padding: 20px;
   width: 40px;
   height: 40px;
@@ -1626,7 +1625,7 @@ body {
     position: relative;
     z-index: 10;
   }
-  .store__secOptions__mobile {
+  .store_secOptions_mobile {
     display: block;
   }
   .store__textBanner {
@@ -1644,37 +1643,51 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: yellow;
+  position: relative;
   width: 260px;
   height: 350px;
+  margin-top: 60px;
 }
 
 .cookie__img {
   width: 260px;
   height: 350px;
-  margin-top: 700px;
 }
 
 .cookie__star {
   width: 18px;
   height: 18px;
+  margin-top: 2px;
+}
+
+.cookie__starContainer {
+  margin-right: 70px;
 }
 
 .cookie__information {
-  bottom: -30%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
-  background-color: yellowgreen;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 120px;
 }
 
 .cookie__information2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  background-color: yellowgreen;
+  top: 125px;
+  margin-top: 190px;
+  left: 0;
+  right: 0;
 }
 
 .cookie__subtitle {
@@ -1687,9 +1700,17 @@ body {
 .cookie__name {
   font-family: "Oswald";
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 5px;
   text-align: center;
   line-height: 1;
+}
+
+.cookie__price {
+  margin-left: 10px;
+  margin-right: 8px;
+  font-size: 15px;
+  font-family: "Oswald";
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
