@@ -1,0 +1,54 @@
+.cookie{
+
+    align-items: center;
+    background-color: yellow;
+    width: 260px;
+    height: 350px;
+  
+
+
+    &__img{
+
+        width: 260px;
+        height: 350px;
+        margin-top: 700px;   
+    }
+
+    &__star{
+        width: 18px;
+        height: 18px;
+    }
+    &__information{
+        bottom: -30%;
+        justify-content: center;
+        position: absolute;
+        background-color: yellowgreen;     
+    }
+
+    &__information2{
+       
+        justify-content: center;
+        position: absolute;
+        background-color: yellowgreen;     
+    }
+
+    &__subtitle{
+
+        font-family: "PT Mono";
+        color: white;
+        font-size: 12px;
+        text-align: center;
+
+    }
+
+    &__name{
+
+        font-family: "Oswald";
+        color:  white;
+        font-size: 30px;
+        margin-top: 5px;
+        text-align: center;
+        line-height: 1;
+
+    }
+}
