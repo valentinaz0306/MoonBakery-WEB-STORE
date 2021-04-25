@@ -32,6 +32,12 @@ body {
    height: 720px;
 }
 
+.hidden{
+
+    display: none !important;
+
+}
+
 @media(max-width: 900px) {
     .shop--cookies {
         font-size: 30px;

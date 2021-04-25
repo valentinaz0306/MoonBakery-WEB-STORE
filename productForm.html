@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <form class="productForm">
+
+        <p class="productForm__loader hidden">
+            Loading...
+        </p>
+
+        <p class="productForm__success hidden">
+            Document Successfully added!
+        </p>
+
+        <p class="productForm__error hidden">
+            We Had a Problem, Try Again
+        </p>
+
+        <!--nombre del producto -->
+        <label class="productForm__label" for="productName">Name</label>
+        <input class="productForm__input" id="productName" name="name" type="text" placeholder="Name of the product">
+
+        <!--precio del producto -->
+        <label class="productForm__label" for="productPrice">Price</label>
+        <input class="productForm__input" id="productPrice" name="price" type="number"
+            placeholder="Price of the product">
+
+        <!--sabor del producto -->
+        <label class="productForm__label" for="productFlavor">Flavor</label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="chocolate" type="checkbox" Chocolate>
+            Chocolate
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="vanilla" type="checkbox" Chocolate>
+            Vanilla
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="strawberry" type="checkbox" Chocolate>
+            Strawberry
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="peanutButter" type="checkbox" Chocolate>
+            Peanut butter
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="condensedMilk" type="checkbox" Chocolate>
+            Condensed milk
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="coffee" type="checkbox" Chocolate>
+            Coffee
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="lemon" type="checkbox" Chocolate>
+            Lemon
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="banana" type="checkbox" Chocolate>
+            Banana
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="carrot" type="checkbox" Chocolate>
+            Carrot
+        </label>
+
+        <label class="productForm__label productForm__label--checkbox">
+            <input class="productForm__checkbox" name="honey" type="checkbox" Chocolate>
+            Honey
+        </label>
+
+        <!--chips del producto -->
+
+
+        <!--popularidad del producto -->
+
+
+
+        <button class="productForm__btn" type="submit"> Send </button>
+
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+    <script src="./scripts/productForm.js"></script>
+</body>
+
+</html>

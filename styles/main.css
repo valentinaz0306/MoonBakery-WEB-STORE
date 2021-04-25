@@ -39,6 +39,10 @@ body {
   height: 720px;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media (max-width: 900px) {
   .shop--cookies {
     font-size: 30px;
@@ -1721,5 +1725,34 @@ body {
   font-size: 15px;
   font-family: "Oswald";
   color: white;
+}
+
+.productForm__label {
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.productForm--checkbox {
+  margin-top: 2px;
+}
+
+.productForm__input {
+  display: block;
+  margin-left: 20px;
+}
+
+.productForm__btn {
+  margin-top: 15px;
+  display: block;
+  margin-left: 20px;
+}
+
+.productForm__success {
+  color: #10bb43;
+}
+
+.productForm__error {
+  color: #bb1010;
 }
 /*# sourceMappingURL=main.css.map */
