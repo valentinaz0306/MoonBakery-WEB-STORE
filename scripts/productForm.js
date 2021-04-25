@@ -21,16 +21,32 @@ productForm.addEventListener('submit', function (event) {
     console.log('name:', productForm.name.value);
     console.log('price:', productForm.price.value);
 
-    //flavor
+    //array product
     const product = {
         name: productForm.name.value,
         price: parseFloat(productForm.price.value),
+        popularity: parseFloat(productForm.popularity.value),
         flavor: [],
+        chips: [],
     }
-
+    //flavor
     if (productForm.chocolate.checked) product.flavor.push('chocolate');
     if (productForm.vanilla.checked) product.flavor.push('vanilla');
     if (productForm.strawberry.checked) product.flavor.push('strawberry');
+    if (productForm.coffee.checked) product.flavor.push('coffee');
+    if (productForm.banana.checked) product.flavor.push('banana');
+    if (productForm.lemon.checked) product.flavor.push('lemon');
+    if (productForm.carrot.checked) product.flavor.push('carrot');
+    if (productForm.honey.checked) product.flavor.push('honey');
+    if (productForm.peanutButter.checked) product.flavor.push('peanutButter');
+    if (productForm.condensedMilk.checked) product.flavor.push('condensedMilk');
+    
+    //Chips
+    if (productForm.chocolateChip.checked) product.chips.push('chocolateChip');
+    if (productForm.vanillaChip.checked) product.chips.push('vanillaChip');
+    if (productForm.mymsChip.checked) product.chips.push('mymsChip');
+    if (productForm.macadamiaChip.checked) product.chips.push('macadamiaChip');
+    if (productForm.blueberryChip.checked) product.chips.push('blueberryChip');
 
     console.log(product);
     productFormLoader.classList.remove('hidded');
