@@ -22,7 +22,7 @@
         </p>
 
         <p class="productForm__error hidden">
-            We Had a Problem, Try Again
+            We Had a Problem, Try Again.
         </p>
 
         <!--nombre del producto -->
@@ -36,8 +36,14 @@
 
         <!--popularidad del producto -->
         <label class="productForm__label" for="productPopularity">Popularity</label>
-        <input class="productForm__input" id="productPopularity" name="popularity" type="number"
-            placeholder="Popularity of the product">
+        <select class="productForm__select" id="productPopularity" name="popularity">
+            <option value="">Select Popularity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
 
         <!--sabor del producto -->
         <label class="productForm__label" for="productFlavor">Flavor</label>
@@ -121,6 +127,10 @@
             Blueberry
         </label>
 
+        <img class= "productForm__img hidden" src="">
+        <label for="image" class="productForm__label">Image</label>
+        <input id="image" class="productForm__input" name="image" type="file">
+
 
         <button class="productForm__btn" type="submit"> Send </button>
 
@@ -128,6 +138,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
     <script src="./scripts/productForm.js"></script>
 </body>
 

@@ -16,6 +16,12 @@
         margin-left: 20px;
     }
 
+    &__select{
+        margin-top: 15px;
+        display: block;
+        margin-left: 20px;
+    }
+
     &__btn{
         margin-top: 15px;
         display: block;
@@ -28,6 +34,12 @@
 
     &__error{
         color: rgb(187, 16, 16);
+    }
+
+    &__img{
+        width: 200px;
+        margin: 4px 0;
+        margin-left: 20px;
     }
 
 

@@ -1742,6 +1742,12 @@ body {
   margin-left: 20px;
 }
 
+.productForm__select {
+  margin-top: 15px;
+  display: block;
+  margin-left: 20px;
+}
+
 .productForm__btn {
   margin-top: 15px;
   display: block;
@@ -1754,5 +1760,11 @@ body {
 
 .productForm__error {
   color: #bb1010;
+}
+
+.productForm__img {
+  width: 200px;
+  margin: 4px 0;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=main.css.map */

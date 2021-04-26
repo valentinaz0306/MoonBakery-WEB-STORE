@@ -10,25 +10,38 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
+const storage = firebase.firestore();
 
 const productForm = document.querySelector('.productForm');
 const productFormLoader = document.querySelector('.productForm__loader');
 const productFormSuccess = document.querySelector('.productForm__success');
 const productFormError = document.querySelector('.productForm__error');
+const productFormImg = document.querySelector('.productForm__img');
+
+
+    //image load 
+    productForm.image.addEventListener('change', function () {
+        var reader = new FileReader();
+        reader.onload = function (event) {
+            productFormImg.classList.remove('hidden');
+            productFormImg.setAttribute('src', event.target.result);
+        }
+        reader.readAsDataURL(productForm.image.files[0]); // convert to base64 string
+    });
 
 productForm.addEventListener('submit', function (event) {
     event.preventDefault();
     console.log('name:', productForm.name.value);
     console.log('price:', productForm.price.value);
 
-    //array product
+    //array products
     const product = {
         name: productForm.name.value,
         price: parseFloat(productForm.price.value),
-        popularity: parseFloat(productForm.popularity.value),
+        popularity: productForm.popularity.value,
         flavor: [],
         chips: [],
-    }
+    };
     //flavor
     if (productForm.chocolate.checked) product.flavor.push('chocolate');
     if (productForm.vanilla.checked) product.flavor.push('vanilla');
@@ -40,7 +53,7 @@ productForm.addEventListener('submit', function (event) {
     if (productForm.honey.checked) product.flavor.push('honey');
     if (productForm.peanutButter.checked) product.flavor.push('peanutButter');
     if (productForm.condensedMilk.checked) product.flavor.push('condensedMilk');
-    
+
     //Chips
     if (productForm.chocolateChip.checked) product.chips.push('chocolateChip');
     if (productForm.vanillaChip.checked) product.chips.push('vanillaChip');
@@ -48,18 +61,50 @@ productForm.addEventListener('submit', function (event) {
     if (productForm.macadamiaChip.checked) product.chips.push('macadamiaChip');
     if (productForm.blueberryChip.checked) product.chips.push('blueberryChip');
 
-    console.log(product);
+    //when user doesnt complete the form
+
+    let error = '';
+
+    if (!product.name.value) {
+        error += 'Product name is required. <br/>';
+    }
+
+    if (!product.price.value) {
+        error += 'Product price is required. <br/>';
+    }
+
+    if (!product.popularity.value) {
+        error += 'You must select a number. <br/>';
+
+    }
+
+    if (error) {
+        productFormError.innerHTML = error;
+        productFormError.classList.remove('hidded');
+        return;
+
+    } else {
+        productFormError.classList.add('hidded');
+    }
+
+    //console.log(product);
+
+
+    console.log(productForm.image.files);
+    //return;
+
+
     productFormLoader.classList.remove('hidded');
     db.collection('products').add(product)
-    .then(function (docRef) {
-        console.log('document added', docRef.id)
-        productFormLoader.classList.add('hidded');
-        productFormSuccess.classList.remove('hidden');
-    })
-    .catch(function (error) {
-        productFormLoader.classList.add('hidded');
-        productFormError.classList.remove('hidded');
-    });
+        .then(function (docRef) {
+            console.log('document added', docRef.id)
+            productFormLoader.classList.add('hidded');
+            productFormSuccess.classList.remove('hidden');
+        })
+        .catch(function (error) {
+            productFormLoader.classList.add('hidded');
+            productFormError.classList.remove('hidded');
+        });
 
 });
 
