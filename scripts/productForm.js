@@ -1,16 +1,3 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyAkAwiy8kSED_CZWMUf4MnMJ5eEgYuF4LQ",
-    authDomain: "moonbakery-webstore.firebaseapp.com",
-    projectId: "moonbakery-webstore",
-    storageBucket: "moonbakery-webstore.appspot.com",
-    messagingSenderId: "944877331887",
-    appId: "1:944877331887:web:7e27f4d22c0d1bd875bb5a"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-const db = firebase.firestore();
-const storage = firebase.firestore();
 
 const productForm = document.querySelector('.productForm');
 const productFormLoader = document.querySelector('.productForm__loader');
@@ -94,14 +81,21 @@ productForm.addEventListener('submit', function (event) {
         productFormError.classList.add('hidded');
     }
 
-    console.log(imageFiles);
+    //console.log(imageFiles);
+
+    productFormLoader.classList.remove('hidded');
+    productFormError.classList.add('hidded');
+
+    const genericCatch = function (error) {
+        productFormLoader.classList.add('hidded');
+        productFormError.classList.remove('hidded');
+        productFormError.innerHTML='There was an error in the product upload.'
+    }
 
     // firestore information 
     db.collection('products').add(product)
         .then(function (docRef) {
-            console.log('document added', docRef.id)
-            productFormLoader.classList.add('hidded');
-            productFormSuccess.classList.remove('hidden');
+
 
             const uploadPromises = [];
             const downloadUrlPromises = [];
@@ -126,23 +120,29 @@ productForm.addEventListener('submit', function (event) {
                 });
 
                 Promise.all(downloadUrlPromises).then(function (downloadURLs) {
-                    console.log(downloadURLs);
-                });
+                    const images = [];
+                    downloadURLs.forEach(function (url, index) {
+                        images.push({
+
+                            url: url,
+                            ref: snapshots[index].ref.fullPath
+
+                        });
+                    });
+
+                    db.collection('products').doc(docRef.id).update({
+                        images: images
+                    }).then(function () {
+                        productFormLoader.classList.add('hidded');
+                        productFormSuccess.classList.remove('hidden');
+                    })
+                        .catch(genericCatch);
+                })
+                    .catch(genericCatch);
             })
-
-            /*.then(function (downloadURL) {
-               productFormLoader.classList.remove('hidded');
-               product.imageUrl = downloadURL;
-               product.imageRef = snapshot.ref.fullPath;
-
-               console.log('File available at', downloadURL);
-           });*/
-
+                .catch(genericCatch);
         })
-        .catch(function (error) {
-            productFormLoader.classList.add('hidded');
-            productFormError.classList.remove('hidded');
-        });
+        .catch(genericCatch);
 
 
 });

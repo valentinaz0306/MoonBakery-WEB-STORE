@@ -1659,7 +1659,7 @@ body {
   width: 260px;
   height: 350px;
   margin-top: 60px;
-  margin: 20px;
+  margin: 12px;
 }
 
 .cookie__img {
@@ -1668,8 +1668,8 @@ body {
 }
 
 .cookie__star {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   margin-top: 2px;
 }
 

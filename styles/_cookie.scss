@@ -6,20 +6,21 @@
     flex-wrap: wrap;
 }
 .cookie {
+    
     align-items: center;
     position: relative;
     width: 260px;
     height: 350px;
     margin-top: 60px;
-    margin: 20px;
+    margin: 12px;
 
     &__img {
         width: 260px;
         height: 350px;
     }
     &__star {
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
         margin-top: 2px;    
     }
     &__starContainer {
