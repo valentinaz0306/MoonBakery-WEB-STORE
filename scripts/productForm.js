@@ -19,15 +19,15 @@ const productFormError = document.querySelector('.productForm__error');
 const productFormImg = document.querySelector('.productForm__img');
 
 
-    //image load 
-    productForm.image.addEventListener('change', function () {
-        var reader = new FileReader();
-        reader.onload = function (event) {
-            productFormImg.classList.remove('hidden');
-            productFormImg.setAttribute('src', event.target.result);
-        }
-        reader.readAsDataURL(productForm.image.files[0]); // convert to base64 string
-    });
+//image load 
+productForm.image.addEventListener('change', function () {
+    var reader = new FileReader();
+    reader.onload = function (event) {
+        productFormImg.classList.remove('hidden');
+        productFormImg.setAttribute('src', event.target.result);
+    }
+    reader.readAsDataURL(productForm.image.files[0]); // convert to base64 string
+});
 
 productForm.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -65,15 +65,15 @@ productForm.addEventListener('submit', function (event) {
 
     let error = '';
 
-    if (!product.name.value) {
+    if (!product.name) {
         error += 'Product name is required. <br/>';
     }
 
-    if (!product.price.value) {
+    if (!product.price) {
         error += 'Product price is required. <br/>';
     }
 
-    if (!product.popularity.value) {
+    if (!product.popularity) {
         error += 'You must select a number. <br/>';
 
     }
@@ -87,24 +87,47 @@ productForm.addEventListener('submit', function (event) {
         productFormError.classList.add('hidded');
     }
 
-    //console.log(product);
+    // Create a root reference
+    
+    const file = productForm.image.files[0];
+
+    var storageRef = firebase.storage().ref();
+    var fileRef = storageRef.child(`images/${product.type}/${file.name}`);
+
+    //image upload 
+    fileRef.put(file).then(function (snapshot) {
+
+        // get url download img
+        snapshot.ref.getDownloadURL().then(function (downloadURL) {
+            productFormLoader.classList.remove('hidded');
+            product.imageUrl=downloadURL;
+            product.imageRef= snapshot.ref.fullPath;
 
 
-    console.log(productForm.image.files);
-    //return;
+            // firestore information 
+            db.collection('products').add(product)
+                .then(function (docRef) {
+                    console.log('document added', docRef.id)
+                    productFormLoader.classList.add('hidded');
+                    productFormSuccess.classList.remove('hidden');
+                })
+                .catch(function (error) {
+                    productFormLoader.classList.add('hidded');
+                    productFormError.classList.remove('hidded');
+                });
 
-
-    productFormLoader.classList.remove('hidded');
-    db.collection('products').add(product)
-        .then(function (docRef) {
-            console.log('document added', docRef.id)
-            productFormLoader.classList.add('hidded');
-            productFormSuccess.classList.remove('hidden');
-        })
-        .catch(function (error) {
-            productFormLoader.classList.add('hidded');
-            productFormError.classList.remove('hidded');
+            console.log('File available at', downloadURL);
         });
+
+        console.log(snapshot);
+        console.log('Uploaded a blob or file!');
+    });
+
+
+
+    //console.log(product);
+    //console.log(productForm.image.files);
+    //return;
 
 });
 
