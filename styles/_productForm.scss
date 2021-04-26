@@ -38,9 +38,11 @@
 
     &__img{
         width: 200px;
-        margin: 4px 0;
+        margin: 4px 10px 0 0 ;
         margin-left: 20px;
     }
-
+    &__images{
+        display: flex;
+    }
 
 }
