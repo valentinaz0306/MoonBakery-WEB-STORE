@@ -1,4 +1,5 @@
 const list= document.querySelector('.list');
+const filters= document.querySelector('.filters');
 
 db.collection("products")
 .get()

@@ -1,3 +1,41 @@
+.filters{
+
+    display: flex;
+    margin-top: 40px;
+
+    &__text{
+        
+    font-family: "Oswald";
+    color: rgb(17, 20, 117);
+    font-size: 45px;
+    margin-left: 25px;
+
+    }
+
+   /* &__container{
+        display: flex;
+        margin-left: 395px;
+    }*/
+
+    &__select{
+
+        width: 380px;
+        height: 50px;
+        font-family: "PT Mono";
+        color: rgb(17, 20, 117);
+        background: transparent;
+        font-size: 15px;
+        border-width: 2px;
+        border-color: rgb(17, 20, 117);
+        border-radius: 2px;
+        outline-color: rgb(17, 20, 117);
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+}
+
+ 
+
 .store {
     display: flex;
     flex-direction: column;
