@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <header class="productDetail">
+        <nav class="productDetail__nav">
+            <div class="productDetail__mobile">
+                <div class="productDetail__menu"></div>
+                <div class="productDetail__menu"></div>
+                <div class="productDetail__menu"></div>
+            </div>
+            <div class="productDetail__firstOptions">
+                <a class="productDetail__shop">SHOP</a>
+                <a class="productDetail__location">LOCATIONS</a>
+                <a class="productDetail__grocery">GROCERY</a>
+            </div>
+            <img class="productDetail__logo2" src="img/logo2.png">
+            <div class="productDetail__secOptions">
+                <a class="productDetail__delivery">LOCAL DELIVERY OR PICK UP</a>
+                <img class="productDetail__user2" src="img/user2.png">
+                <img class="productDetail__bag" src="img/bag.png">
+            </div>
+            <div class="productDetail_secOptions_mobile">
+                <img class="productDetail__user2" src="img/user2.png">
+                <img class="productDetail__bag" src="img/bag.png">
+            </div>
+        </nav>
+    </header>
+
+    <div class="productDetail__title">
+        <p class="productDetail__title">INTERESTED? SEE OUR PRICES</p>
+    </div>
+
+    <section class="detail">
+        <div class="detail_images">
+            <img class="detail__product" src="img/productDetailimg.png">
+        </div>
+
+        <div class="detail__container">
+            <p class="detail__order">baked to order</p>
+            <p class="detail__title">MACADAMIA <br> COOKIE!</p>
+            <p class="detail__text">Delicious vanilla cookie with <br>
+                macadamia chips!</p>
+
+            <div class="detail__btn">
+                <a class="detail__textbtn">
+                    <strong> SELECT SIZE TO ADD TO CARD </strong> </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer__news">
+
+            <div class="footer__containerinfo">
+                <p class="footer__info">WE BAKE EMAILS TOO.<br> SIGN UP TO RECEIVE THE LATEST NEWS.</p>
+            </div>
+
+            <div class="footer__suscription">
+                <input class="footer__input" placeholder="email">
+            </div>
+        </div>
+
+        <section class="footer__links">
+
+            <div class="footer__containerLink">
+
+                <article class="footer__link--one">
+                    <a> <strong> JOIN OUR TEAM </strong> </a>
+                    <a> <strong> SHIPPING </strong> </a>
+                    <a> <strong> PRIVACY </strong> </a>
+                    <a> <strong> TERMS OF USE </strong> </a>
+                </article>
+
+                <article class="footer__link--two">
+                    <a> <strong> ABOUT </strong> </a>
+                    <a> <strong> TERMS OF SERVICE </strong> </a>
+                    <a> <strong> CORPORATE GIFTING </strong> </a>
+                    <a> <strong> EVENT ORDERING </strong> </a>
+                    <a> <strong> REFUND POLICY </strong> </a>
+                </article>
+
+            </div>
+            <di class="footer__socialcontainer">
+                <div class="footer__social">
+                    <img class="footer__face" src="img/social1.png">
+                    <img class="footer__twi" src="img/social2.png">
+                    <img class="footer__ig" src="img/social3.png">
+                    <img class="footer__pint" src="img/social4.png">
+                </div>
+            </di>
+
+        </section>
+
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/productDetail.js"></script>
+</body>
+
+
+</html>

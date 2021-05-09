@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Store</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
@@ -56,33 +56,43 @@
             <select class="filters__select" id="flavorFilter" name="flavorFilter">
                 <option value="">filter by</option>
                 <optgroup label="Flavor Cookie">
-                    <option value="1">Vanilla</option>
-                    <option value="2">Chocolate</option>
-                    <option value="3">Strawberry</option>
-                    <option value="4">Peanut butter</option>
-                    <option value="5">Condensed milk</option>
-                    <option value="6">Coffee</option>
-                    <option value="7">Lemon</option>
-                    <option value="8">Banana</option>
-                    <option value="9">Carrot</option>
-                    <option value="10">Honey</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="peanutButter">Peanut butter</option>
+                    <option value="condensedMilk">Condensed milk</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="lemon">Lemon</option>
+                    <option value="banana">Banana</option>
+                    <option value="carrot">Carrot</option>
+                    <option value="honey">Honey</option>
                 </optgroup>
                 <optgroup label="Chips Cookie">
-                    <option value="11">Vanilla</option>
-                    <option value="12">Chocolate</option>
-                    <option value="13">M&Ms</option>
-                    <option value="14">Macadamia</option>
-                    <option value="15">Blueberry</option>
+                    <option value="vanillaChip">Vanilla</option>
+                    <option value="chocolateChip">Chocolate</option>
+                    <option value="mymsChip">M&Ms</option>
+                    <option value="macadamiaChip">Macadamia</option>
+                    <option value="blueberryChip">Blueberry</option>
                 </optgroup>
             </select>
 
-           <!-- <label class="filters__label" for="flavorFilter"></label>
+            <!-- <label class="filters__label" for="flavorFilter"></label>
             <select class="filters__select" id="flavorFilter" name="flavorFilter">
                 <option value="">order by</option>
                     <option value="1">Vanilla</option>
                     <option value="2">Chocolate</option>
                     <option value="3">Strawberry</option>
             </select> -->
+
+
+            <label for="order" class="filters__label"></label>
+            <select id="order" class="filters__select" name="order">
+                <option value="">Order by</option>
+                <option value="price_asc">Price (less expensive to more expensive)</option>
+                <option value="price_desc">Price (more expensive to less expensive)</option>
+                <option value="alpha">Alphabetic (A-Z)</option>
+            </select>
+
         </div>
     </form>
 

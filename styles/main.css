@@ -1461,7 +1461,7 @@ body {
 }
 
 .filters__select {
-  width: 380px;
+  width: 200px;
   height: 50px;
   font-family: "PT Mono";
   color: #111475;
@@ -1575,7 +1575,7 @@ body {
 }
 
 .store__nav {
-  background-color: whitesmoke;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1805,5 +1805,320 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.productDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-size: cover;
+}
+
+.productDetail__logo2 {
+  position: relative;
+  height: 100px;
+}
+
+.productDetail__menu {
+  margin-top: -2%;
+  width: 40px;
+  height: 40px;
+}
+
+.productDetail__user2 {
+  margin-top: -2%;
+  width: 40px;
+  height: 40px;
+}
+
+.productDetail__bag {
+  margin-top: -2%;
+  margin-right: 2%;
+  width: 40px;
+  height: 40px;
+}
+
+.productDetail__firstOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Oswald";
+  color: #111475;
+  margin-top: 2.2%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25%;
+}
+
+.productDetail__shop:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.productDetail__location:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.productDetail__grocery:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.productDetail__delivery:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.productDetail__secOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Oswald";
+  color: #111475;
+  margin-top: 2.2%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 26%;
+}
+
+.productDetail__nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+}
+
+.productDetail__title {
+  text-align: center;
+  font-family: "Oswald";
+  margin-top: 60px;
+  font-size: 45px;
+  color: #111475;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+}
+
+.productDetail__mobile {
+  display: none;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.productDetail__menu {
+  margin-top: 5px;
+  width: 25px;
+  height: 3px;
+  background-color: #111475;
+  border-radius: 5px;
+}
+
+/* MOBILE*/
+.store_secOptions_mobile {
+  display: none;
+}
+
+.store_secOptions_mobile .productDetail__user2 {
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 900px) {
+  .productDetail {
+    height: 560px;
+  }
+  .productDetail__logo2 {
+    height: 75px;
+  }
+  .productDetail__nav {
+    height: 75px;
+  }
+  .productDetail__user2 {
+    margin-top: 15px;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .productDetail__bag {
+    margin-top: 15px;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .productDetail__firstOptions {
+    display: none;
+  }
+  .productDetail__secOptions {
+    display: none;
+  }
+  .productDetail__mobile {
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+  .productDetail_secOptions_mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  .productDetail_secOptions_mobile {
+    display: none;
+  }
+}
+
+.detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.detail__product {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.detail__container {
+  background-color: #ecf1e7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail__order {
+  font-family: "PT Mono";
+  color: #111475;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.detail__title {
+  font-family: "Oswald";
+  color: #111475;
+  font-size: 54px;
+  text-align: center;
+  margin-top: 17px;
+  line-height: 1;
+}
+
+.detail__text {
+  font-family: "Chivo";
+  color: #111475;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.detail__btn {
+  margin-top: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: transparent;
+  border-color: #111475;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Oswald";
+  display: flex;
+  color: #111475;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail__btn:hover {
+  background-color: #111475;
+  color: white;
+}
+
+@media (max-width: 1050px) {
+  .detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .detail__product {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 100%;
+    height: 430px;
+  }
+  .detail__container {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 86%;
+    margin-top: 0%;
+  }
+  .detail__order {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 45px;
+  }
+  .detail__title {
+    font-size: 34px;
+    text-align: center;
+    margin-top: 13px;
+  }
+  .detail__text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .detail__btn {
+    margin-top: 8%;
+    margin-bottom: 7%;
+    width: 230px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

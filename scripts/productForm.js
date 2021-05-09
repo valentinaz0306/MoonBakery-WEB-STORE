@@ -28,32 +28,37 @@ productForm.addEventListener('submit', function (event) {
     //console.log('name:', productForm.name.value);
     //console.log('price:', productForm.price.value);
 
+
+    //favlor
+    let f = '';
+    if (productForm.chocolate.checked) f = 'chocolate';
+    if (productForm.vanilla.checked) f = 'vanilla';
+    if (productForm.strawberry.checked) f = 'strawberry';
+    if (productForm.coffee.checked) f = 'coffee';
+    if (productForm.banana.checked) f = 'banana';
+    if (productForm.lemon.checked) f = 'lemon';
+    if (productForm.carrot.checked) f = 'carrot';
+    if (productForm.honey.checked) f = 'honey';
+    if (productForm.peanutButter.checked) f = 'peanutButter';
+    if (productForm.condensedMilk.checked) f = 'condensedMilk';
+
+
+    //ChipS
+    let c = '';
+    if (productForm.chocolateChip.checked) c = 'chocolateChip';
+    if (productForm.vanillaChip.checked)  c = 'vanillaChip';
+    if (productForm.mymsChip.checked)  c = 'mymsChip';
+    if (productForm.macadamiaChip.checked)  c = 'macadamiaChip';
+    if (productForm.blueberryChip.checked)  c = 'blueberryChip';
+
     //array products
     const product = {
         name: productForm.name.value,
         price: parseFloat(productForm.price.value),
         popularity: productForm.popularity.value,
-        flavor: [],
-        chips: [],
+        flavor: f,
+        chips: c,
     };
-    //flavor
-    if (productForm.chocolate.checked) product.flavor.push('chocolate');
-    if (productForm.vanilla.checked) product.flavor.push('vanilla');
-    if (productForm.strawberry.checked) product.flavor.push('strawberry');
-    if (productForm.coffee.checked) product.flavor.push('coffee');
-    if (productForm.banana.checked) product.flavor.push('banana');
-    if (productForm.lemon.checked) product.flavor.push('lemon');
-    if (productForm.carrot.checked) product.flavor.push('carrot');
-    if (productForm.honey.checked) product.flavor.push('honey');
-    if (productForm.peanutButter.checked) product.flavor.push('peanutButter');
-    if (productForm.condensedMilk.checked) product.flavor.push('condensedMilk');
-
-    //Chips
-    if (productForm.chocolateChip.checked) product.chips.push('chocolateChip');
-    if (productForm.vanillaChip.checked) product.chips.push('vanillaChip');
-    if (productForm.mymsChip.checked) product.chips.push('mymsChip');
-    if (productForm.macadamiaChip.checked) product.chips.push('macadamiaChip');
-    if (productForm.blueberryChip.checked) product.chips.push('blueberryChip');
 
     //when user doesnt complete the form
 
@@ -89,7 +94,7 @@ productForm.addEventListener('submit', function (event) {
     const genericCatch = function (error) {
         productFormLoader.classList.add('hidded');
         productFormError.classList.remove('hidded');
-        productFormError.innerHTML='There was an error in the product upload.'
+        productFormError.innerHTML = 'There was an error in the product upload.'
     }
 
     // firestore information 
