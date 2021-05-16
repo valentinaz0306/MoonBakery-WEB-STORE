@@ -14,8 +14,23 @@ const handleCollectionResult = (querySnapshot) => {
         if (!img) {
             img = './img/placeholder-24.png';
         }
-        product.innerHTML = `
 
+        let showStars = [];
+        const popularity = data.popularity;
+        for(let i = 0; i<5; i++){
+
+
+            if(i<popularity)
+                showStars[i] = "";
+             else
+                showStars[i] = "hidden";
+
+        }
+      
+
+
+
+        product.innerHTML = `
 <section class="cookie">
         <a href="./productDetail.html?id=${doc.id}&name=${data.name}"> 
             <img class="cookie__img" src="${img}" alt="">
@@ -26,11 +41,11 @@ const handleCollectionResult = (querySnapshot) => {
         </div>
         <div class="cookie__information2">
             <div class="cookie__starContainer">
-                <img class="cookie__star" src="img/star.png">
-                <img class="cookie__star" src="img/star.png">
-                <img class="cookie__star" src="img/star.png">
-                <img class="cookie__star" src="img/star.png">
-                <img class="cookie__star" src="img/star.png">
+                <img class="cookie__star ${showStars[0]}" src="img/star.png">
+                <img class="cookie__star ${showStars[1]}" src="img/star.png">
+                <img class="cookie__star ${showStars[2]}" src="img/star.png">
+                <img class="cookie__star ${showStars[3]}" src="img/star.png">
+                <img class="cookie__star ${showStars[4]}" src="img/star.png">
             </div>
             <p class="cookie__price">FROM $ ${data.price}</p>
         </div>
@@ -49,14 +64,31 @@ filters.addEventListener('change', function () {
     //console.log(filters.flavorFilter.value);
 
     let productsCollection = db.collection("products");
-
+    let filterInput = document.querySelector('select[name="flavorFilter"] option:checked').parentElement;
+    console.log(filterInput.label);
+    
     if (filters.flavorFilter.value) {
-        let array = [];
-        array.push(filters.flavorFilter.value);
-        console.log(array);
-        console.log('flavor == ' + filters.flavorFilter.value);
-        productsCollection = productsCollection.where('flavor', '==', filters.flavorFilter.value);
 
+
+        switch(filterInput.label){
+
+            case "FlavorCookie":
+                productsCollection = productsCollection.where('flavor', '==', filters.flavorFilter.value);
+                break;
+
+            case "ChipsCookie":
+                    console.log("FILTRAR POR CHIPS");
+                    productsCollection = productsCollection.where('chips', '==', filters.flavorFilter.value);
+                break;
+
+                case "Popularity":
+                    console.log("FILTRAR POR POPULARIDAD");
+                    productsCollection = productsCollection.where('popularity', '==', filters.flavorFilter.value);
+                break;
+       
+
+        }
+       
     }
 
 

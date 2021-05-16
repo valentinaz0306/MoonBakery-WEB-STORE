@@ -24,7 +24,8 @@
         margin-top: 2px;    
     }
     &__starContainer {
-      margin-right: 70px;    
+        
+      margin-left: 15px;
     }
     &__information {
         position: absolute;
@@ -36,7 +37,7 @@
     &__information2 {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         position: absolute;
         top: 125px;
         margin-top: 190px;
@@ -59,7 +60,7 @@
     }
     &__price {
         margin-left: 10px;
-        margin-right: 8px;
+        margin-right: 15px;
         font-size: 15px;
         font-family: "Oswald";
         color: white;

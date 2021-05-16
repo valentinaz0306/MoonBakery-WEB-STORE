@@ -1707,7 +1707,7 @@ body {
 }
 
 .cookie__starContainer {
-  margin-right: 70px;
+  margin-left: 15px;
 }
 
 .cookie__information {
@@ -1726,9 +1726,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
   top: 125px;
   margin-top: 190px;
@@ -1754,7 +1754,7 @@ body {
 
 .cookie__price {
   margin-left: 10px;
-  margin-right: 8px;
+  margin-right: 15px;
   font-size: 15px;
   font-family: "Oswald";
   color: white;
