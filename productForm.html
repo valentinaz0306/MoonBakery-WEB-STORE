@@ -29,10 +29,13 @@
         <label class="productForm__label" for="productName">Name</label>
         <input class="productForm__input" id="productName" name="name" type="text" placeholder="Name of the product">
 
+        <!--descripcion del producto -->
+        <label class="productForm__label" for="productDescription">Description</label>
+        <textarea class="productForm__input" id="productDescription" name="description" rows="10" cols="50">Write something here</textarea>
+
         <!--precio del producto -->
         <label class="productForm__label" for="productPrice">Price</label>
-        <input class="productForm__input" id="productPrice" name="price" type="number"
-            placeholder="Price of the product">
+        <input class="productForm__input" id="productPrice" name="price" type="number" placeholder="Price of the product">
 
         <!--popularidad del producto -->
         <label class="productForm__label" for="productPopularity">Popularity</label>
@@ -47,6 +50,8 @@
 
         <!--sabor del producto -->
         <label class="productForm__label" for="productFlavor">Flavor</label>
+
+
 
         <label class="productForm__label productForm__label--checkbox">
             <input class="productForm__checkbox" name="chocolate" type="checkbox">
@@ -127,9 +132,9 @@
             Blueberry
         </label>
 
-        <label for="image" class="productForm__label">Image</label>
+        <label for="image" class="productForm__label imagesLabel">Image (You must add at least 3 images)</label>
         <div class="productForm__images"></div>
-        <input multiple accept=".jpg,.png" id="image" class="productForm__input" name="image" type="file">
+        <input accept=".jpg,.png" id="image" class="productForm__input" name="image" type="file">
 
 
         <button class="productForm__btn" type="submit"> Send </button>
