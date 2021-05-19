@@ -11,6 +11,8 @@ const detailTitle = document.querySelector('.detail__title');
 const detailText = document.querySelector('.detail__text');
 const left = document.querySelector('.detail__product--larrow');
 const right = document.querySelector('.detail__product--rarrow');
+const detailDescription = document.querySelector('.detail__description');
+
 
 let counter = 1;
 
@@ -59,6 +61,7 @@ db.collection('products')
 
         detailImg.setAttribute('src', data.images[1].url);
         detailTitle.innerText = data.name;
+        detailDescription.innerText = data.description;
         detailText.innerText = `$ ${data.price}`;
 
     });

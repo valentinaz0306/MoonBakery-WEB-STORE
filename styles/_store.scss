@@ -12,10 +12,10 @@
 
     }
 
-   /* &__container{
-        display: flex;
-        margin-left: 395px;
-    }*/
+    &__container{
+        
+        margin-left: 710px;
+    }
 
     &__select{
 
@@ -43,6 +43,8 @@
     background-size: cover;
     height: 700px;
     background-image: url('../img/productBanner.png');
+
+
     &__logo2 {
         position: relative;
         height: 100px;

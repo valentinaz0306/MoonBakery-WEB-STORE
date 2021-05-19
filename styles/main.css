@@ -1447,10 +1447,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
-  /* &__container{
-        display: flex;
-        margin-left: 395px;
-    }*/
 }
 
 .filters__text {
@@ -1458,6 +1454,10 @@ body {
   color: #111475;
   font-size: 45px;
   margin-left: 25px;
+}
+
+.filters__container {
+  margin-left: 710px;
 }
 
 .filters__select {
@@ -1682,6 +1682,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .cookie {
@@ -2015,7 +2016,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .detail_images {
@@ -2057,13 +2058,21 @@ body {
 .detail__title {
   font-family: "Oswald";
   color: #111475;
-  font-size: 54px;
+  font-size: 34px;
   text-align: center;
   margin-top: 17px;
   line-height: 1;
 }
 
 .detail__text {
+  font-family: "Oswald";
+  color: #111475;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.detail__description {
   font-family: "Chivo";
   color: #111475;
   font-size: 18px;

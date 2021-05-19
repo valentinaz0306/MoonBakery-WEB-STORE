@@ -1,7 +1,7 @@
 .detail {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
     &_images {
         position: relative;
     }
@@ -30,12 +30,21 @@
     &__title {
         font-family: "Oswald";
         color: rgb(17, 20, 117);
-        font-size: 54px;
+        font-size: 34px;
         text-align: center;
         margin-top: 17px;
         line-height: 1;
     }
     &__text {
+        font-family: "Oswald";
+        color: rgb(17, 20, 117);
+        font-size: 14px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    &__description{
+
         font-family: "Chivo";
         color: rgb(17, 20, 117);
         font-size: 18px;
@@ -99,6 +108,7 @@
             text-align: center;
             margin-top: 30px;
         }
+
         &__btn {
             margin-top: 8%;
             margin-bottom: 7%;
