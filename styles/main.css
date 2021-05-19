@@ -2035,6 +2035,7 @@ body {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 40%;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2052,7 +2053,7 @@ body {
   color: #111475;
   font-size: 12px;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .detail__title {
@@ -2062,6 +2063,7 @@ body {
   text-align: center;
   margin-top: 17px;
   line-height: 1;
+  width: 300px;
 }
 
 .detail__text {
@@ -2077,11 +2079,11 @@ body {
   color: #111475;
   font-size: 18px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .detail__btn {
-  margin-top: 12%;
+  margin-top: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

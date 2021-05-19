@@ -17,9 +17,6 @@ const detailDescription = document.querySelector('.detail__description');
 let counter = 1;
 
 
-
-
-
 db.collection('products')
     .doc(id)
     .get()
