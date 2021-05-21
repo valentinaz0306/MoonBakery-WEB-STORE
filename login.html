@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
@@ -36,34 +36,37 @@
         </nav>
     </header>
 
-    <div class="productDetail__title">
-        <p class="productDetail__title">INTERESTED? SEE OUR PRICES</p>
-    </div>
+    <div class="login">
 
-    <section class="detail">
-        <div class="detail_images">
-            <img class="detail__product--larrow" src="img/arrow_left.png">
-            <img class="detail__product detail__product--image" src="img/placeholder-24.png">
-            <img class="detail__product--rarrow" src="img/arrow_right.png">
-        </div>
+        <div class="login__modal1">
+            <p class="login__login">LOGIN</p>
+            <input class="login__input" placeholder="email">
+            <input class="login__input" placeholder="password">
 
-        <div class="detail__container">
-            <p class="detail__order">baked to order</p>
-            <p class="detail__title"></p>
-            <p class="detail__description"> </p>
-            <p class="detail__text"> </p>
-            
-
-            <div class="detail__btn">
-                <a class="detail__textbtn">
-                    <strong> SELECT TO ADD TO CARD </strong> </a>
+            <div class="login__btn">
+                <a class="login__textbtn">
+                    <strong> SIGN IN </strong> </a>
             </div>
 
         </div>
 
-    </section>
+        <div class="login__modal2">
+            <p class="login__signup">SIGN UP</p>
+            <input class="login__input" placeholder="email">
+            <input class="login__input" placeholder="firstname">
+            <input class="login__input" placeholder="lastname">
+            <input class="login__input" placeholder="password">
 
-    <footer class="footer">
+            <div class="login__btn">
+                <a class="login__textbtn">
+                    <strong> CREATE </strong> </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer footer__login">
 
         <div class="footer__news">
 
@@ -109,12 +112,7 @@
 
     </footer>
 
-    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
-    <script src="./scripts/general.js"></script>
-    <script src="./scripts/productDetail.js"></script>
-</body>
 
+</body>
 
 </html>

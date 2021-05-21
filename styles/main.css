@@ -602,6 +602,10 @@ body {
   width: 100%;
 }
 
+.footer__login {
+  margin-top: 0px;
+}
+
 .footer__news {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2160,5 +2164,111 @@ body {
     height: 40px;
     font-size: 16px;
   }
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e5ebee;
+  height: 670px;
+}
+
+.login__login {
+  font-family: "Oswald";
+  color: #111475;
+  font-size: 35px;
+}
+
+.login__signup {
+  font-family: "Oswald";
+  color: #111475;
+  font-size: 35px;
+}
+
+.login__modal1 {
+  background-color: #f2ebf8;
+  margin-top: 100px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 200px;
+  width: 700px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 2px 2px 10px #cccbcb;
+          box-shadow: 2px 2px 10px #cccbcb;
+}
+
+.login__modal2 {
+  background-color: #fefdf9;
+  margin-top: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 200px;
+  width: 700px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 2px 2px 10px #cccbcb;
+          box-shadow: 2px 2px 10px #cccbcb;
+}
+
+.login__input {
+  width: 270px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  border-color: #111475;
+  border-width: 2px;
+  border-style: solid;
+  font-family: "PT mono";
+  color: #111475;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.login__btn {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 270px;
+  height: 40px;
+  border-radius: 4px;
+  border-width: 2px;
+  background-color: #111475;
+  color: #e5ebee;
+  font-family: "Oswald";
+  display: flex;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
