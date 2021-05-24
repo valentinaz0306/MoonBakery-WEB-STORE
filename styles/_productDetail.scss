@@ -30,6 +30,12 @@
         justify-content: space-around;
         width: 25%;
     }
+
+    &__shop{
+        text-decoration: none;
+        color: rgb(17, 20, 117);
+    }
+
     &__shop:hover {
         text-decoration-line: underline;
     }

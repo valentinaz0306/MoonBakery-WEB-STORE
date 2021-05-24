@@ -1,0 +1,104 @@
+.cart{
+
+    &__list{
+       
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    &__title{
+       
+        font-family: "Oswald";
+        font-size: 40px;
+        color: rgb(17, 20, 117);
+    }
+
+    &__product{
+        
+        background-color: rgb(228, 237, 241);
+        display: flex;
+        margin-top: 20px;
+        width: 530px;
+    }
+
+    &__img{
+       width: 150px; 
+       height: 150px;
+    }
+
+    &__productInfo{
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 500px;
+    }
+
+    &__order{
+       
+        font-family: "PT Mono";
+        color: rgb(17, 20, 117);
+        font-size: 12px;
+      
+    }
+
+    &__cookieName{
+        
+        font-family: "Oswald";
+        font-size: 28px;
+        color: rgb(17, 20, 117);
+        line-height: 1;
+        height: 55px;
+        width: 250px;
+    }
+
+    &__btn{
+        
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &__subtraction{
+       
+       width: 20px; 
+       height: 20px;
+       margin-right: 8px;
+       margin-top: 3px;
+    }
+
+    &__addition{
+
+       width: 20px; 
+       height: 20px;
+       margin-left: 8px;
+       margin-top: 3px;
+    }
+
+    &__number{
+        
+        font-family: "Oswald";
+        font-size: 18px;
+        color: rgb(17, 20, 117);
+    
+        
+    }
+
+    &__symbols{
+       
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    &__equis{
+
+        width: 18px; 
+        height: 18px; 
+    }
+
+    &__price{
+        
+        font-family: "Oswald";
+        font-size: 18px;
+        color: rgb(17, 20, 117);
+        margin-top: 55px;
+    }
+
+}

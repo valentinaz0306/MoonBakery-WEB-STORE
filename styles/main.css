@@ -122,6 +122,11 @@ body {
   width: 25%;
 }
 
+.header__shop {
+  text-decoration: none;
+  color: white;
+}
+
 .header__shop:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1859,6 +1864,11 @@ body {
   width: 25%;
 }
 
+.productDetail__shop {
+  text-decoration: none;
+  color: #111475;
+}
+
 .productDetail__shop:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -2270,5 +2280,95 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cart__list {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.cart__title {
+  font-family: "Oswald";
+  font-size: 40px;
+  color: #111475;
+}
+
+.cart__product {
+  background-color: #e4edf1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  width: 530px;
+}
+
+.cart__img {
+  width: 150px;
+  height: 150px;
+}
+
+.cart__productInfo {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.cart__order {
+  font-family: "PT Mono";
+  color: #111475;
+  font-size: 12px;
+}
+
+.cart__cookieName {
+  font-family: "Oswald";
+  font-size: 28px;
+  color: #111475;
+  line-height: 1;
+  height: 55px;
+  width: 250px;
+}
+
+.cart__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.cart__subtraction {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.cart__addition {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+.cart__number {
+  font-family: "Oswald";
+  font-size: 18px;
+  color: #111475;
+}
+
+.cart__symbols {
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.cart__equis {
+  width: 18px;
+  height: 18px;
+}
+
+.cart__price {
+  font-family: "Oswald";
+  font-size: 18px;
+  color: #111475;
+  margin-top: 55px;
 }
 /*# sourceMappingURL=main.css.map */
