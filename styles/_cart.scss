@@ -1,5 +1,7 @@
 .cart{
 
+    display: flex;
+
     &__list{
        
         margin-left: 30px;
@@ -18,7 +20,7 @@
         background-color: rgb(228, 237, 241);
         display: flex;
         margin-top: 20px;
-        width: 530px;
+        width: 650px;
     }
 
     &__img{
