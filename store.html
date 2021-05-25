@@ -26,7 +26,10 @@
             <img class="store__logo2" src="img/logo2.png">
             <div class="store__secOptions">
                 <a class="store__delivery">LOCAL DELIVERY OR PICK UP</a>
-                <img class="store__user2" src="img/user2.png">
+                <a href="./login.html" class="userLoggedOut">
+                    <img class="store__user2" src="img/user2.png">
+                </a>
+                <a class="store__grocery hidden userLoggedIn logout">LOG OUT</a>
                 <img class="store__bag" src="img/bag.png">
             </div>
             <div class="store_secOptions_mobile">
@@ -149,6 +152,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
     <script src="./scripts/general.js"></script>
     <script src="./scripts/store.js"></script>
 </body>

@@ -19,14 +19,17 @@
                 <div class="productDetail__menu"></div>
             </div>
             <div class="productDetail__firstOptions">
-                <a href="./store.html"class="productDetail__shop">SHOP</a>
+                <a href="./store.html" class="productDetail__shop">SHOP</a>
                 <a class="productDetail__location">LOCATIONS</a>
                 <a class="productDetail__grocery">GROCERY</a>
             </div>
             <img class="productDetail__logo2" src="img/logo2.png">
             <div class="productDetail__secOptions">
                 <a class="productDetail__delivery">LOCAL DELIVERY OR PICK UP</a>
-                <img class="productDetail__user2" src="img/user2.png">
+                <a href="./login.html" class="userLoggedOut">
+                    <img class="store__user2" src="img/user2.png">
+                </a>
+                <a class="store__grocery hidden userLoggedIn logout">LOG OUT</a>
                 <img class="productDetail__bag" src="img/bag.png">
             </div>
             <div class="productDetail_secOptions_mobile">
@@ -40,10 +43,10 @@
 
         <div class="login__modal1">
             <p class="login__login">LOGIN</p>
-            <input class="login__input" placeholder="email">
-            <input class="login__input" placeholder="password">
-
-            <div class="login__btn">
+            <input class="login__input loginEmail" placeholder="email">
+            <input class="login__input loginPassword" placeholder="password">
+            <p class="error errorLblL"></p>
+            <div class="login__btn loginB">
                 <a class="login__textbtn">
                     <strong> SIGN IN </strong> </a>
             </div>
@@ -52,12 +55,12 @@
 
         <div class="login__modal2">
             <p class="login__signup">SIGN UP</p>
-            <input class="login__input" placeholder="email">
-            <input class="login__input" placeholder="firstname">
-            <input class="login__input" placeholder="lastname">
-            <input class="login__input" placeholder="password">
-
-            <div class="login__btn">
+            <input class="login__input signupEmail" placeholder="email">
+            <input class="login__input signupFirstname" placeholder="firstname">
+            <input class="login__input signupLastname" placeholder="lastname">
+            <input class="login__input signupPassword" placeholder="password">
+            <p class="error errorLbl"></p>
+            <div class="login__btn create">
                 <a class="login__textbtn">
                     <strong> CREATE </strong> </a>
             </div>
@@ -112,6 +115,11 @@
 
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/login.js"></script>
 
 </body>
 
