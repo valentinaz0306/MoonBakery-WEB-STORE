@@ -9,6 +9,10 @@ const imageFiles = [];
 
 let imagesCounter = 0;
 
+toStore = () => {
+    window.location.href = './store.html';
+}
+
 //image load 
 productForm.image.addEventListener('change', function() {
 
