@@ -1980,9 +1980,6 @@ body {
 }
 
 @media (max-width: 900px) {
-  .productDetail {
-    height: 560px;
-  }
   .productDetail__logo2 {
     height: 75px;
   }

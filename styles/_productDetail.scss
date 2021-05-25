@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     background-size: cover;
+   
     &__logo2 {
         position: relative;
         height: 100px;
@@ -129,7 +130,7 @@
 
 @media(max-width: 900px) {
     .productDetail {
-        height: 560px;
+       
         &__logo2 {
             height: 75px;
         }
