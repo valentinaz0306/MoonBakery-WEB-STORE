@@ -44,7 +44,10 @@ body {
 }
 
 .error {
-  color: red;
+  margin-top: 10px;
+  color: #a03320;
+  font-family: "PT mono";
+  font-size: 13px;
 }
 
 @media (max-width: 900px) {
@@ -2475,5 +2478,96 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order__name {
+  font-family: "PT mono";
+  font-size: 15px;
+  color: #111475;
+  margin-left: 10px;
+}
+
+.order__subtitle {
+  font-family: "Chivo";
+  font-size: 15px;
+  color: #111475;
+}
+
+.order__list {
+  margin-top: 50px;
+}
+
+.order__title {
+  font-family: "Oswald";
+  font-size: 40px;
+  color: #111475;
+  text-align: center;
+}
+
+.order__product {
+  background-color: #e4edf1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  width: 800px;
+}
+
+.order__img {
+  width: 200px;
+  height: 200px;
+}
+
+.order__productInfo {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.order__order {
+  font-family: "PT Mono";
+  color: #111475;
+  font-size: 12px;
+}
+
+.order__cookieName {
+  font-family: "Oswald";
+  font-size: 28px;
+  color: #111475;
+  line-height: 1;
+  height: 55px;
+  width: 450px;
+}
+
+.order__symbols {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.order__equis {
+  width: 18px;
+  height: 18px;
+}
+
+.order__price {
+  font-family: "Oswald";
+  font-size: 18px;
+  color: #111475;
+  margin-top: 100px;
 }
 /*# sourceMappingURL=main.css.map */
