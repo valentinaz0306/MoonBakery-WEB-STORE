@@ -67,3 +67,12 @@
         color: white;
     }
 }
+
+@media(max-width: 900px) {
+
+    .list{
+
+        justify-content: center;
+        align-items: center;
+    }
+}

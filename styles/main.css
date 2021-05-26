@@ -846,6 +846,9 @@ body {
     margin-top: 60px;
     margin-bottom: 40px;
   }
+  .footer__login {
+    margin-top: 0px;
+  }
 }
 
 .product {
@@ -1491,6 +1494,47 @@ body {
   margin-right: 30px;
 }
 
+@media (max-width: 1400px) {
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .filters__text {
+    font-size: 40px;
+  }
+  .filters__container {
+    margin-top: 20px;
+    margin-left: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .filters__select {
+    width: 300px;
+    height: 38px;
+    font-size: 13px;
+    border-width: 2px;
+  }
+}
+
 .store {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1777,6 +1821,17 @@ body {
   color: white;
 }
 
+@media (max-width: 900px) {
+  .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .productForm__label {
   display: block;
   margin-top: 10px;
@@ -2019,6 +2074,11 @@ body {
   .productDetail_secOptions_mobile {
     display: block;
   }
+  .productDetail__title {
+    margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 900px) {
@@ -2081,15 +2141,15 @@ body {
   text-align: center;
   margin-top: 17px;
   line-height: 1;
-  width: 300px;
+  width: 350px;
 }
 
 .detail__text {
   font-family: "Oswald";
   color: #111475;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .detail__description {
@@ -2141,6 +2201,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2162,11 +2223,16 @@ body {
     margin-top: 45px;
   }
   .detail__title {
-    font-size: 34px;
+    font-size: 30px;
     text-align: center;
     margin-top: 13px;
   }
   .detail__text {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .detail__description {
     font-size: 14px;
     text-align: center;
     margin-top: 30px;
@@ -2176,7 +2242,7 @@ body {
     margin-bottom: 7%;
     width: 230px;
     height: 40px;
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -2286,6 +2352,71 @@ body {
           align-items: center;
 }
 
+@media (max-width: 1200px) {
+  .login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 670px;
+  }
+  .login__login {
+    font-family: "Oswald";
+    margin-top: 20px;
+    color: #111475;
+    font-size: 25px;
+  }
+  .login__signup {
+    font-family: "Oswald";
+    color: #111475;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .login__modal1 {
+    background-color: #f2ebf8;
+    margin-top: 40px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: 0px;
+    width: 360px;
+    height: 430px;
+  }
+  .login__modal2 {
+    background-color: #fefdf9;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 0px;
+    width: 360px;
+    height: 430px;
+  }
+  .login__input {
+    width: 220px;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 10spx;
+    margin-top: 15px;
+  }
+  .login__btn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 220px;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+}
+
 .cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2380,6 +2511,93 @@ body {
   font-size: 18px;
   color: #111475;
   margin-top: 55px;
+}
+
+@media (max-width: 1000px) {
+  .cart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cart__list {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .cart__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .cart__product {
+    background-color: #e4edf1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    width: 380px;
+  }
+  .cart__img {
+    width: 120px;
+    height: 120px;
+  }
+  .cart__productInfo {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 500px;
+  }
+  .cart__order {
+    font-family: "PT Mono";
+    color: #111475;
+    font-size: 10px;
+  }
+  .cart__cookieName {
+    font-family: "Oswald";
+    font-size: 20px;
+    line-height: 1;
+    height: 55px;
+    width: 220px;
+  }
+  .cart__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+  }
+  .cart__subtraction {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-top: 3px;
+  }
+  .cart__addition {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    margin-top: 3px;
+  }
+  .cart__number {
+    font-family: "Oswald";
+    font-size: 14px;
+    color: #111475;
+  }
+  .cart__symbols {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .cart__equis {
+    width: 16px;
+    height: 16px;
+  }
+  .cart__price {
+    font-size: 14px;
+    margin-top: 60px;
+  }
 }
 
 .delivery {
@@ -2480,6 +2698,13 @@ body {
           align-items: center;
 }
 
+@media (max-width: 1000px) {
+  .delivery {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
 .order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2571,6 +2796,80 @@ body {
   margin-top: 100px;
 }
 
+@media (max-width: 900px) {
+  .order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order__name {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .order__subtitle {
+    font-size: 10px;
+  }
+  .order__list {
+    margin-top: 40px;
+  }
+  .order__title {
+    font-size: 30px;
+  }
+  .order__product {
+    background-color: #e4edf1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    width: 400px;
+    height: 150px;
+  }
+  .order__img {
+    width: 130px;
+    height: 150px;
+  }
+  .order__productInfo {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 500px;
+  }
+  .order__order {
+    font-size: 10px;
+  }
+  .order__cookieName {
+    font-family: "Oswald";
+    font-size: 18px;
+    color: #111475;
+    line-height: 1;
+    height: 50px;
+    width: 150px;
+  }
+  .order__symbols {
+    margin-right: 13px;
+    margin-top: 10px;
+  }
+  .order__equis {
+    width: 13px;
+    height: 13px;
+  }
+  .order__price {
+    font-family: "Oswald";
+    font-size: 12px;
+    color: #111475;
+    margin-top: 90px;
+  }
+}
+
 .confirmation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2642,5 +2941,26 @@ body {
 .confirmation__btn:hover {
   background-color: #111475;
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .confirmation__modal {
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 370px;
+    height: 250px;
+  }
+  .confirmation__title {
+    font-size: 28px;
+  }
+  .confirmation__text {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .confirmation__btn {
+    width: 270px;
+    height: 40px;
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

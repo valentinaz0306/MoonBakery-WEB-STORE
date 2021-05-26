@@ -84,3 +84,78 @@
     }
 
 }
+
+@media(max-width: 1200px) {
+
+    .login{
+
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 670px;
+    
+        &__login{
+    
+            font-family: "Oswald";
+            margin-top: 20px;
+            color: rgb(17, 20, 117);
+            font-size: 25px;
+        }
+    
+        &__signup{
+    
+            font-family: "Oswald";
+            color: rgb(17, 20, 117);
+            font-size: 25px;
+            margin-top: 20px;
+        }
+    
+        &__modal1{
+    
+            background-color: rgb(242, 235, 248);
+            margin-top: 40px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            margin-left: 0px;
+            width: 360px;
+            height: 430px;
+    
+        }
+    
+        &__modal2 {
+    
+            background-color: rgb(254, 253, 249);
+            margin-top: 0px;
+            margin-bottom: 30px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            margin-right: 0px;
+            width: 360px;
+            height: 430px;   
+        }
+    
+        &__input{
+        
+            width: 220px;
+            height: 35px;
+            border-radius: 4px;
+            font-size: 10spx;
+            margin-top: 15px;
+        
+        }
+    
+        &__btn {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            width: 220px;
+            height: 35px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+
+
+
+    }
+}

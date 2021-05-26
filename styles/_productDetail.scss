@@ -90,6 +90,7 @@
 
 .detail {
     &__product {
+
         &--image {
             object-fit: cover;
         }
@@ -162,6 +163,14 @@
         }
         &_secOptions_mobile {
             display: block;
+        }
+
+        &__title {
+    
+            margin-top: 60px;
+            font-size: 30px;
+            text-align: center;
+        
         }
     }
 }

@@ -94,3 +94,96 @@
     }
 
 }
+
+@media(max-width: 900px) {
+
+    .order{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  
+    &__name{
+       
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    &__subtitle{
+       
+        font-size: 10px;
+    }
+
+
+    &__list{
+       
+        margin-top: 40px;
+    }
+
+    &__title{
+
+        font-size: 30px;
+    
+    }
+
+    &__product{
+        
+        background-color: rgb(228, 237, 241);
+        display: flex;
+        margin-top: 20px;
+        width: 400px;
+        height: 150px;
+    }
+
+    &__img{
+       width: 130px; 
+       height: 150px;
+    }
+
+    &__productInfo{
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 500px;
+    }
+
+    &__order{
+    
+        font-size: 10px;
+      
+    }
+
+    &__cookieName{
+        
+        font-family: "Oswald";
+        font-size: 18px;
+        color: rgb(17, 20, 117);
+        line-height: 1;
+        height: 50px;
+        width: 150px;
+    }
+
+    &__symbols{
+       
+        margin-right: 13px;
+        margin-top: 10px;
+    }
+
+    &__equis{
+
+        width: 13px; 
+        height: 13px; 
+    }
+
+    &__price{
+        
+        font-family: "Oswald";
+        font-size: 12px;
+        color: rgb(17, 20, 117);
+        margin-top: 90px;
+    }
+
+    }
+
+}

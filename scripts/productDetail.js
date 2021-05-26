@@ -59,6 +59,6 @@ db.collection('products')
         detailImg.setAttribute('src', data.images[1].url);
         detailTitle.innerText = data.name;
         detailDescription.innerText = data.description;
-        detailText.innerText = `$ ${data.price}`;
+        detailText.innerText = `4PK  $ ${data.price}`;
 
     });

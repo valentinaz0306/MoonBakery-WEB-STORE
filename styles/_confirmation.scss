@@ -53,3 +53,37 @@
         color: white;
     }
 }
+
+@media(max-width: 1000px) {
+
+    .confirmation{
+
+    &__modal{
+        
+        margin-top: 40px;
+        border-radius: 10px;
+        width: 370px;
+        height: 250px;
+    }
+
+    &__title{
+
+        font-size: 28px;
+    }
+
+    &__text{
+        
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    &__btn {
+       
+        width: 270px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+
+    
+}

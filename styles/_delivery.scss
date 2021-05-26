@@ -3,11 +3,6 @@
        margin-top: 90px;
        margin-left: 370px;
 
-    &__information{
-        
-    }
-
-
     &__modalContainer{
 
        display: flex;
@@ -104,3 +99,15 @@
     }
 
 }
+
+@media(max-width: 1000px) {
+
+    .delivery{
+
+        margin-top: 20px;
+        margin-left: 0px;
+ 
+ 
+ }
+
+    }
