@@ -1,0 +1,55 @@
+.confirmation{
+
+    display: flex;
+    justify-content: center;
+
+    &__modal{
+        background-color: rgb(242, 235, 248);
+        margin-top: 100px;
+        border-radius: 10px;
+        width: 600px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    &__title{
+
+        font-family: "Oswald";
+        font-size: 40px;
+        color: rgb(17, 20, 117);
+        line-height: 1;
+    }
+
+    &__text{
+        
+        font-family: "Chivo";
+        font-size: 20px;
+        color: rgb(17, 20, 117);
+        margin-top: 20px;
+    }
+
+    &__btn {
+        margin-top: 8%;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: transparent;
+        border-color: rgb(17, 20, 117);
+        border-width: 1px;
+        border-style: solid;
+        font-family: "Oswald";
+        display: flex;
+        color: rgb(17, 20, 117);
+        font-size: 15px;
+        align-items: center;
+    }
+    &__btn:hover {
+        background-color: rgb(17, 20, 117);
+        color: white;
+    }
+}
