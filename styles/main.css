@@ -1928,6 +1928,31 @@ body {
   border-radius: 5px;
 }
 
+.detail__product--image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.detail__product--larrow {
+  position: absolute;
+  width: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+}
+
+.detail__product--rarrow {
+  position: absolute;
+  width: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+}
+
 /* MOBILE*/
 .store_secOptions_mobile {
   display: none;
@@ -1991,6 +2016,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 100px;
+}
+
+.detail_images {
+  position: relative;
 }
 
 .detail__product {
