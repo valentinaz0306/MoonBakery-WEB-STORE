@@ -17,16 +17,16 @@ const handleCollectionResult = (querySnapshot) => {
 
         let showStars = [];
         const popularity = data.popularity;
-        for(let i = 0; i<5; i++){
+        for (let i = 0; i < 5; i++) {
 
 
-            if(i<popularity)
+            if (i < popularity)
                 showStars[i] = "";
-             else
+            else
                 showStars[i] = "hidden";
 
         }
-      
+
 
 
 
@@ -60,35 +60,35 @@ const handleCollectionResult = (querySnapshot) => {
     });
 }
 
-filters.addEventListener('change', function () {
+filters.addEventListener('change', function() {
     //console.log(filters.flavorFilter.value);
 
     let productsCollection = db.collection("products");
     let filterInput = document.querySelector('select[name="flavorFilter"] option:checked').parentElement;
     console.log(filterInput.label);
-    
+
     if (filters.flavorFilter.value) {
 
 
-        switch(filterInput.label){
+        switch (filterInput.label) {
 
             case "FlavorCookie":
                 productsCollection = productsCollection.where('flavor', '==', filters.flavorFilter.value);
                 break;
 
             case "ChipsCookie":
-                    console.log("FILTRAR POR CHIPS");
-                    productsCollection = productsCollection.where('chips', '==', filters.flavorFilter.value);
+                console.log("FILTRAR POR CHIPS");
+                productsCollection = productsCollection.where('chips', '==', filters.flavorFilter.value);
                 break;
 
-                case "Popularity":
-                    console.log("FILTRAR POR POPULARIDAD");
-                    productsCollection = productsCollection.where('popularity', '==', filters.flavorFilter.value);
+            case "Popularity":
+                console.log("FILTRAR POR POPULARIDAD");
+                productsCollection = productsCollection.where('popularity', '==', filters.flavorFilter.value);
                 break;
-       
+
 
         }
-       
+
     }
 
 
@@ -113,14 +113,10 @@ db.collection("products")
     .get()
     .then(handleCollectionResult);
 
-    /*let productsCollection= db.collection("products");
+/*let productsCollection= db.collection("products");
 
 const params= new URLSearchParams(location.search);
 if (params.get('type')){
     productsCollection = productsCollection.where('type','==', params.get('type'));
 }
 productsCollection.get().then(handleCollectionResult);*/
-
-
-
-

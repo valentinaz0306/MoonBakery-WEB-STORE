@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
+    <title> Order</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
@@ -39,35 +39,47 @@
         </nav>
     </header>
 
-    <div class="productDetail__title">
-        <p class="productDetail__title">INTERESTED? SEE OUR PRICES</p>
-    </div>
+    <section class="order">
 
-    <section class="detail">
-        <div class="detail_images">
-            <img class="detail__product--larrow" src="img/arrow_left.png">
-            <img class="detail__product detail__product--image" src="img/placeholder-24.png">
-            <img class="detail__product--rarrow" src="img/arrow_right.png">
-        </div>
+        <div class="order__list">
+            <p class="order__title">YOUR ORDERS</p>
+            <div class="order__product">
+                <img class="order__img" src="img/example.png">
+                <div class="order__productInfo">
+                    <p class="order__order">your order of cookies</p>
+                    <p class="order__cookieName">CHOCOLATE VANILLA CHIP COOKIE</p>
 
-        <div class="detail__container">
-            <p class="detail__order">baked to order</p>
-            <p class="detail__title"></p>
-<<<<<<< HEAD
-            <p class="detail__text">Delicious vanilla cookie with <br> macadamia chips!</p>
+                    <div class="order__container">
+                        <p class="order__subtitle"> <strong> Name: </strong> </p>
+                        <p class="order__name"> Valentina Zapata</p>
+                    </div>
 
-=======
-            <p class="detail__description"> </p>
-            <div class="detail__background">
-                <p class="detail__text"> </p>
+                    <div class="order__container">
+                        <p class="order__subtitle"> <strong> ID: </strong> </p>
+                        <p class="order__name"> 1193987564 </p>
+                    </div>
+
+                    <div class="order__container">
+                        <p class="order__subtitle"> <strong> Email: </strong> </p>
+                        <p class="order__name"> valzapata@gmail.com</p>
+                    </div>
+
+                    <div class="order__container">
+                        <p class="order__subtitle"> <strong> Credit Card Number: </strong> </p>
+                        <p class="order__name"> 10008965 </p>
+                    </div>
+
+                    <div class="order__container">
+                        <p class="order__subtitle"> <strong> Address: </strong> </p>
+                        <p class="order__name"> Cr 98b 48-52 Cali,Col </p>
+                    </div>
+
+                </div>
+                <div class="order__symbols">
+                    <img class="order__equis" src="img/equis.png">
+                    <p class="order__price">$17</p>
+                </div>
             </div>
-           
->>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
-            <div class="detail__btn">
-                <a class="detail__textbtn">
-                    <strong> ADD TO CARD </strong> </a>
-            </div>
-
         </div>
 
     </section>
@@ -118,13 +130,6 @@
 
     </footer>
 
-    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
-    <script src="./scripts/general.js"></script>
-    <script src="./scripts/productDetail.js"></script>
 </body>
-
 
 </html>

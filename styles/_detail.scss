@@ -1,7 +1,13 @@
 .detail {
+
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     margin-top: 100px;
+=======
+    margin-top: 80px;
+
+>>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
     &_images {
         position: relative;
     }
@@ -16,6 +22,7 @@
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         width: 40%;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,25 +32,36 @@
         color: rgb(17, 20, 117);
         font-size: 12px;
         text-align: center;
-        margin-top: 45px;
+        margin-top: 50px;
     }
     &__title {
         font-family: "Oswald";
         color: rgb(17, 20, 117);
-        font-size: 54px;
+        font-size: 34px;
         text-align: center;
         margin-top: 17px;
         line-height: 1;
+        width: 350px;
     }
     &__text {
+       
+        font-family: "Oswald";
+        color:rgb(17, 20, 117);
+        font-size: 18px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    &__description{
+
         font-family: "Chivo";
         color: rgb(17, 20, 117);
         font-size: 18px;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     &__btn {
-        margin-top: 12%;
+        margin-top: 8%;
         display: flex;
         justify-content: center;
         width: 300px;
@@ -66,12 +84,18 @@
 }
 
 @media(max-width: 1050px) {
+
     .detail {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
         &__product {
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
@@ -90,21 +114,30 @@
             margin-top: 45px;
         }
         &__title {
-            font-size: 34px;
+            font-size: 30px;
             text-align: center;
             margin-top: 13px;
         }
         &__text {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        &__description{
+
             font-size: 14px;
             text-align: center;
             margin-top: 30px;
         }
+
         &__btn {
             margin-top: 8%;
             margin-bottom: 7%;
             width: 230px;
             height: 40px;
-            font-size: 16px;
+            font-size: 12px;
         }
+
     }
 }

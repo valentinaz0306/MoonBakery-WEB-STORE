@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
-
     <header class="productDetail">
         <nav class="productDetail__nav">
             <div class="productDetail__mobile">
@@ -39,36 +38,59 @@
         </nav>
     </header>
 
-    <div class="productDetail__title">
-        <p class="productDetail__title">INTERESTED? SEE OUR PRICES</p>
-    </div>
+    <section class="cart">
 
-    <section class="detail">
-        <div class="detail_images">
-            <img class="detail__product--larrow" src="img/arrow_left.png">
-            <img class="detail__product detail__product--image" src="img/placeholder-24.png">
-            <img class="detail__product--rarrow" src="img/arrow_right.png">
+        <div class="cart__list">
+            <p class="cart__title">YOUR CART</p>
+            <div class="cart__product">
+                <img class="cart__img" src="img/example.png">
+                <div class="cart__productInfo">
+                    <p class="cart__order">your order of cookies</p>
+                    <p class="cart__cookieName">CHOCOLATE VANILLA CHIP COOKIE</p>
+                    <div class="cart__btn">
+                        <img class="cart__subtraction" src="img/subtraction.png">
+                        <p class="cart__number">1</p>
+                        <img class="cart__addition" src="img/addition.png">
+                    </div>
+                </div>
+                <div class="cart__symbols">
+                    <img class="cart__equis" src="img/equis.png">
+                    <p class="cart__price">$17</p>
+                </div>
+            </div>
         </div>
 
-        <div class="detail__container">
-            <p class="detail__order">baked to order</p>
-            <p class="detail__title"></p>
-<<<<<<< HEAD
-            <p class="detail__text">Delicious vanilla cookie with <br> macadamia chips!</p>
+        <section class="delivery">
+            <div class="delivery__information">
+                <div class="delivery__containerBtn">
+                    <div class=" delivery__modalContainer">
+                        <p class="delivery__title2">PERSONAL INFORMATION</p>
+                        <input class="delivery__input" placeholder=" Enter your full name ">
+                        <input class="delivery__input" placeholder=" Enter your ID ">
+                    </div>
+                </div>
 
-=======
-            <p class="detail__description"> </p>
-            <div class="detail__background">
-                <p class="detail__text"> </p>
-            </div>
-           
->>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
-            <div class="detail__btn">
-                <a class="detail__textbtn">
-                    <strong> ADD TO CARD </strong> </a>
-            </div>
+                <div class="delivery__containerBtn">
+                    <div class=" delivery__modalContainer">
+                        <p class="delivery__title2">PAYMENT AND DELIVERY <br> INFORMATION</p>
+                        <input class="delivery__input" placeholder=" Enter your Credit Card Numeber ">
+                        <input class="delivery__input" placeholder=" Enter your home address ">
+                    </div>
+                </div>
 
-        </div>
+                <div class="delivery__payment">
+                    <div class="delivery__total">
+                        <p class="delivery__subtotal"> SUBTOTAL: </p>
+                        <p class="delivery__subtotal"> $17 </p>
+                    </div>
+                    <p class="delivery__text">free delivery</p>
+                    <div class="delivery__btn">
+                        <a class="delivery__textbtn">
+                            <strong> SHOP ALL </strong> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </section>
 
@@ -118,13 +140,6 @@
 
     </footer>
 
-    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
-    <script src="./scripts/general.js"></script>
-    <script src="./scripts/productDetail.js"></script>
 </body>
-
 
 </html>

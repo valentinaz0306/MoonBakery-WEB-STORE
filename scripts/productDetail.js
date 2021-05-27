@@ -11,11 +11,17 @@ const detailTitle = document.querySelector('.detail__title');
 const detailText = document.querySelector('.detail__text');
 const left = document.querySelector('.detail__product--larrow');
 const right = document.querySelector('.detail__product--rarrow');
+<<<<<<< HEAD
 
 let counter = 1;
 
 
+=======
+const detailDescription = document.querySelector('.detail__description');
+>>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
 
+
+let counter = 1;
 
 
 db.collection('products')
@@ -59,6 +65,11 @@ db.collection('products')
 
         detailImg.setAttribute('src', data.images[1].url);
         detailTitle.innerText = data.name;
+<<<<<<< HEAD
         detailText.innerText = `$ ${data.price}`;
+=======
+        detailDescription.innerText = data.description;
+        detailText.innerText = `4PK  $ ${data.price}`;
+>>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
 
     });

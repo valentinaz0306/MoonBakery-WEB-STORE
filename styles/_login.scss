@@ -1,0 +1,161 @@
+.login{
+
+    display: flex;
+    background-color: rgb(229, 235, 238);
+    height: 670px;
+
+    &__login{
+
+        font-family: "Oswald";
+        color: rgb(17, 20, 117);
+        font-size: 35px;
+    }
+
+    &__signup{
+
+        font-family: "Oswald";
+        color: rgb(17, 20, 117);
+        font-size: 35px;
+    }
+
+    &__modal1{
+
+        background-color: rgb(242, 235, 248);
+        margin-top: 100px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-left: 200px;
+        width: 700px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        box-shadow: 2px 2px 10px rgb(204, 203, 203);  
+
+    }
+
+    &__modal2 {
+
+        background-color: rgb(254, 253, 249);
+        margin-top: 100px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-right: 200px;
+        width: 700px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        box-shadow: 2px 2px 10px rgb(204, 203, 203);     
+    }
+
+    &__input{
+    
+        width: 270px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: transparent;
+        border-color: rgb(17, 20, 117);
+        border-width: 2px;
+        border-style: solid;
+        font-family: "PT mono";
+        color: rgb(17, 20, 117);
+        font-size: 13px;
+        margin-top: 15px;
+    
+    }
+
+    &__btn {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        width: 270px;
+        height: 40px;
+        border-radius: 4px;
+        border-width: 2px;
+       background-color: rgb(17, 20, 117);
+       color: rgb(229, 235, 238);
+        font-family: "Oswald";
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 1200px) {
+
+    .login{
+
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 670px;
+    
+        &__login{
+    
+            font-family: "Oswald";
+            margin-top: 20px;
+            color: rgb(17, 20, 117);
+            font-size: 25px;
+        }
+    
+        &__signup{
+    
+            font-family: "Oswald";
+            color: rgb(17, 20, 117);
+            font-size: 25px;
+            margin-top: 20px;
+        }
+    
+        &__modal1{
+    
+            background-color: rgb(242, 235, 248);
+            margin-top: 40px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            margin-left: 0px;
+            width: 360px;
+            height: 430px;
+    
+        }
+    
+        &__modal2 {
+    
+            background-color: rgb(254, 253, 249);
+            margin-top: 0px;
+            margin-bottom: 30px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            margin-right: 0px;
+            width: 360px;
+            height: 430px;   
+        }
+    
+        &__input{
+        
+            width: 220px;
+            height: 35px;
+            border-radius: 4px;
+            font-size: 10spx;
+            margin-top: 15px;
+        
+        }
+    
+        &__btn {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            width: 220px;
+            height: 35px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+
+
+
+    }
+}

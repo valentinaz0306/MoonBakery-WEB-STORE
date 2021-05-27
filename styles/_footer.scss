@@ -3,6 +3,11 @@
     margin-top: 5%;
     background: rgb(17, 20, 117);
     width: 100%;
+
+    &__login{
+       
+        margin-top: 0px;
+    }
     &__news {
         display: flex;
         flex-direction: column;
@@ -153,6 +158,11 @@
             margin-left: 0px;
             margin-top: 60px;
             margin-bottom: 40px;
+        }
+
+        &__login{
+       
+            margin-top: 0px;
         }
     }
 }
