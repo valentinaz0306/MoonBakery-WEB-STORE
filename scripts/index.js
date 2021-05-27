@@ -91,7 +91,7 @@ function makeCookie() {
                 break;
 
         }
-        console.log(url);
+
         image.src = url;
 
     } else {
@@ -99,15 +99,15 @@ function makeCookie() {
     }
 }
 
-const slider= document.querySelector('.carrousel__slider');
-let currentSlider=0;
+const slider = document.querySelector('.carrousel__slider');
+let currentSlider = 0;
 
-function handleInterval(){
-     currentSlider ++;
-     if(currentSlider>= 3){
-         
-         currentSlider=0;
-     }
-    slider.style.transform=`translate(-${ 100 * currentSlider }%,0px)`;
+function handleInterval() {
+    currentSlider++;
+    if (currentSlider >= 3) {
+
+        currentSlider = 0;
+    }
+    slider.style.transform = `translate(-${ 100 * currentSlider }%,0px)`;
 }
 setInterval(handleInterval, 1000);

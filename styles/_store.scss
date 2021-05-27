@@ -1,8 +1,6 @@
 .filters {
-
     display: flex;
     margin-top: 40px;
-
     &__text {
         font-family: "Oswald";
         color: rgb(17, 20, 117);
@@ -29,19 +27,13 @@
 }
 
 @media(max-width: 1400px) {
-    .filters{
-
+    .filters {
         display: flex;
         flex-direction: column;
         align-items: center;
-      
-
-        &__text{
-
+        &__text {
             font-size: 40px;
-           
         }
-
         &__container {
             margin-top: 20px;
             margin-left: 60px;
@@ -49,29 +41,23 @@
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            
         }
-
         &__select {
             width: 300px;
             height: 38px;
             font-size: 13px;
             border-width: 2px;
-           
         }
-
     }
 }
 
 .store {
-
     display: flex;
     flex-direction: column;
     width: 100%;
     background-size: cover;
     height: 700px;
     background-image: url('../img/productBanner.png');
-
     &__logo2 {
         position: relative;
         height: 100px;
@@ -87,7 +73,7 @@
         height: 40px;
     }
     &__bag {
-        margin-top: -2%;
+        margin-top: -9px;
         margin-right: 2%;
         width: 40px;
         height: 40px;
@@ -171,10 +157,8 @@
 }
 
 @media(max-width: 900px) {
-
     .store {
         height: 560px;
-
         &__logo2 {
             height: 75px;
         }
@@ -211,8 +195,6 @@
             font-size: 50px;
         }
     }
-
-
 }
 
 @media(min-width: 900px) {

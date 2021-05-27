@@ -1,6 +1,6 @@
 const params = new URLSearchParams(location.search);
 const id = params.get('id');
-console.log(id)
+
 
 if (!id) {
     location.href = './404.html';
@@ -11,29 +11,68 @@ const detailTitle = document.querySelector('.detail__title');
 const detailText = document.querySelector('.detail__text');
 const left = document.querySelector('.detail__product--larrow');
 const right = document.querySelector('.detail__product--rarrow');
-<<<<<<< HEAD
-
-let counter = 1;
-
-
-=======
 const detailDescription = document.querySelector('.detail__description');
->>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
+const add = document.querySelector('.add');
 
 
 let counter = 1;
+let product = null;
 
+add.addEventListener('click', () => {
+
+    let repeated = false;
+
+
+    if (cart.length > 0) {
+
+        cart.forEach((elem) => {
+
+            console.log(elem.id + '    ' + id)
+            if (elem.id == id) {
+
+                repeated = true;
+                return;
+            }
+        });
+
+        cart.push({...product, id, });
+
+
+    } else {
+        cart.push({...product, id, });
+    }
+
+    if (loggedUser == null) {
+        window.location.href = './login.html';
+    } else {
+        if (!repeated) {
+            CART_COLLECTION.doc(loggedUser.id).set({ cart }).then(
+                () => {
+                    window.location.href = './cart.html';
+                }
+            );
+        } else {
+            alert('This product have been already added');
+        }
+    }
+
+
+
+});
 
 db.collection('products')
     .doc(id)
     .get()
     .then(function(doc) {
-        console.log(doc.id, doc.data());
+
         const data = doc.data();
+
+        product = doc.data();
+
 
 
         let images = data.images;
-        console.log(images);
+
 
         detailImg.setAttribute('src', images[1].url);
 
@@ -65,11 +104,7 @@ db.collection('products')
 
         detailImg.setAttribute('src', data.images[1].url);
         detailTitle.innerText = data.name;
-<<<<<<< HEAD
-        detailText.innerText = `$ ${data.price}`;
-=======
         detailDescription.innerText = data.description;
         detailText.innerText = `4PK  $ ${data.price}`;
->>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
 
     });

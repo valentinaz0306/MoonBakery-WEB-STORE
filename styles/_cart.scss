@@ -1,49 +1,52 @@
-.cart{
-
+.cart {
     display: flex;
-
-    &__list{
-       
+    &__container {
+        width: 650px;
+    }
+    &__span {
+        position: absolute;
+        top: 32px;
+        right: 42px;
+        background-color: red;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    &__list {
         margin-left: 30px;
         margin-top: 30px;
     }
-
-    &__title{
-       
+    &__title {
         font-family: "Oswald";
         font-size: 40px;
         color: rgb(17, 20, 117);
     }
-
-    &__product{
-        
+    &__product {
         background-color: rgb(228, 237, 241);
         display: flex;
         margin-top: 20px;
         width: 650px;
     }
-
-    &__img{
-       width: 150px; 
-       height: 150px;
+    &__img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
     }
-
-    &__productInfo{
+    &__productInfo {
         margin-left: 20px;
         margin-top: 20px;
         width: 500px;
     }
-
-    &__order{
-       
+    &__order {
         font-family: "PT Mono";
         color: rgb(17, 20, 117);
         font-size: 12px;
-      
     }
-
-    &__cookieName{
-        
+    &__cookieName {
         font-family: "Oswald";
         font-size: 28px;
         color: rgb(17, 20, 117);
@@ -51,173 +54,115 @@
         height: 55px;
         width: 250px;
     }
-
-    &__btn{
-        
+    &__btn {
         display: flex;
         margin-top: 20px;
     }
-
-    &__subtraction{
-       
-       width: 20px; 
-       height: 20px;
-       margin-right: 8px;
-       margin-top: 3px;
+    &__subtraction {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        margin-top: 3px;
     }
-
-    &__addition{
-
-       width: 20px; 
-       height: 20px;
-       margin-left: 8px;
-       margin-top: 3px;
+    &__addition {
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+        margin-top: 3px;
     }
-
-    &__number{
-        
+    &__number {
         font-family: "Oswald";
         font-size: 18px;
         color: rgb(17, 20, 117);
-    
-        
     }
-
-    &__symbols{
-       
+    &__symbols {
         margin-right: 20px;
         margin-top: 30px;
     }
-
-    &__equis{
-
-        width: 18px; 
-        height: 18px; 
+    &__equis {
+        width: 18px;
+        height: 18px;
     }
-
-    &__price{
-        
+    &__price {
         font-family: "Oswald";
         font-size: 18px;
         color: rgb(17, 20, 117);
         margin-top: 55px;
     }
-
 }
 
 @media(max-width: 1000px) {
-
-    .cart{
-
-        flex-direction:column;
+    .cart {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        &__list{
-           
+        &__list {
             margin-left: 0px;
             margin-top: 30px;
         }
-    
-        &__title{
-           
+        &__title {
             font-size: 30px;
             text-align: center;
         }
-    
-        &__product{
-            
+        &__product {
             background-color: rgb(228, 237, 241);
             display: flex;
             margin-top: 20px;
             width: 380px;
         }
-    
-        &__img{
-           width: 120px; 
-           height: 120px;
+        &__img {
+            width: 120px;
+            height: 120px;
         }
-    
-        &__productInfo{
+        &__productInfo {
             margin-left: 10px;
             margin-top: 20px;
             width: 500px;
         }
-    
-        &__order{
-           
+        &__order {
             font-family: "PT Mono";
             color: rgb(17, 20, 117);
             font-size: 10px;
-          
         }
-    
-        &__cookieName{
-            
+        &__cookieName {
             font-family: "Oswald";
             font-size: 20px;
             line-height: 1;
             height: 55px;
             width: 220px;
         }
-    
-        &__btn{
-            
+        &__btn {
             display: flex;
             margin-top: 5px;
         }
-    
-        &__subtraction{
-           
-           width: 16px; 
-           height: 16px;
-           margin-right: 8px;
-           margin-top: 3px;
+        &__subtraction {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            margin-top: 3px;
         }
-    
-        &__addition{
-    
-           width: 16px; 
-           height: 16px;
-           margin-left: 8px;
-           margin-top: 3px;
+        &__addition {
+            width: 16px;
+            height: 16px;
+            margin-left: 8px;
+            margin-top: 3px;
         }
-    
-        &__number{
-            
+        &__number {
             font-family: "Oswald";
             font-size: 14px;
             color: rgb(17, 20, 117);
-            
         }
-    
-        &__symbols{
-           
+        &__symbols {
             margin-left: 0px;
             margin-top: 10px;
         }
-    
-        &__equis{
-    
-            width: 16px; 
-            height: 16px; 
+        &__equis {
+            width: 16px;
+            height: 16px;
         }
-    
         &__price {
-            
             font-size: 14px;
             margin-top: 60px;
         }
-
     }
-
 }
-
-
-
-
-
-
-
-
-

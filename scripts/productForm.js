@@ -9,13 +9,10 @@ const imageFiles = [];
 
 let imagesCounter = 0;
 
-<<<<<<< HEAD
-=======
 toStore = () => {
     window.location.href = './store.html';
 }
 
->>>>>>> 4404267ed886457f9e17e819a0332821e278e0ec
 //image load 
 productForm.image.addEventListener('change', function() {
 
@@ -156,8 +153,8 @@ productForm.addEventListener('submit', function(event) {
 
                             // get url download img
                             downloadUrlPromises.push(snapshot.ref.getDownloadURL());
-                            console.log(snapshot);
-                            console.log('Uploaded a blob or file!');
+
+
                         });
 
                         Promise.all(downloadUrlPromises).then(function(downloadURLs) {

@@ -12,10 +12,13 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const storage = firebase.firestore();
 const auth = firebase.auth();
+const cart__span = document.querySelector('.cart__span');
 
 const USER_COLLECTIONS = db.collection('users');
+const CART_COLLECTION = db.collection('cart');
 
 const logout = document.querySelector('.logout');
+let cart = [];
 
 if (logout) {
     logout.addEventListener('click', () => {
@@ -35,6 +38,7 @@ auth.onAuthStateChanged((user) => {
             if (!doc) {
                 return;
             } else {
+
                 setLoggedUser(doc.data());
 
 
@@ -59,8 +63,12 @@ auth.onAuthStateChanged((user) => {
 
 setLoggedUser = (docDat) => {
 
+
     let user = docDat.user;
+
+
     loggedUser = user;
+    getMyCart(loggedUser.id);
     userLoggedIn();
 
 }
@@ -93,3 +101,43 @@ userLoggedOut = () => {
     });
 
 }
+
+getMyCart = (uid) => {
+
+
+    CART_COLLECTION.doc(uid).get().then(
+
+        dataDoc => {
+            const data = dataDoc.data();
+            if (!data) {
+                return;
+            } else {
+                if (cart__span) {
+                    data.cart.forEach(elem => {
+                        cart.push(elem);
+                    });
+
+                    if (typeof renderCart == 'function') {
+                        renderCart();
+                    }
+                    refreshCartSpan();
+                }
+            }
+        }
+
+
+    );
+
+}
+
+refreshCartSpan = () => {
+    if (cart.length > 0) {
+        cart__span.classList.remove('hidden');
+        cart__span.innerText = cart.length;
+
+    } else {
+        cart__span.classList.add('hidden');
+    }
+}
+
+refreshCartSpan();

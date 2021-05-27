@@ -4,7 +4,7 @@ const filters = document.querySelector('.filters');
 
 
 const handleCollectionResult = (querySnapshot) => {
-    console.log('hola');
+
     list.innerHTML = '';
     querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
@@ -61,11 +61,11 @@ const handleCollectionResult = (querySnapshot) => {
 }
 
 filters.addEventListener('change', function() {
-    //console.log(filters.flavorFilter.value);
+
 
     let productsCollection = db.collection("products");
     let filterInput = document.querySelector('select[name="flavorFilter"] option:checked').parentElement;
-    console.log(filterInput.label);
+
 
     if (filters.flavorFilter.value) {
 
@@ -77,12 +77,12 @@ filters.addEventListener('change', function() {
                 break;
 
             case "ChipsCookie":
-                console.log("FILTRAR POR CHIPS");
+
                 productsCollection = productsCollection.where('chips', '==', filters.flavorFilter.value);
                 break;
 
             case "Popularity":
-                console.log("FILTRAR POR POPULARIDAD");
+
                 productsCollection = productsCollection.where('popularity', '==', filters.flavorFilter.value);
                 break;
 
