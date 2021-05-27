@@ -1,5 +1,45 @@
 const cartContainer = document.querySelector('.cart__container');
 const totalHtml = document.querySelector('.subtotal');
+const fullname = document.querySelector('.fullname');
+const id = document.querySelector('.id');
+const address = document.querySelector('.address');
+const ccnumber = document.querySelector('.ccnumber');
+const buy = document.querySelector('.buy');
+
+buy.addEventListener('click', ()=>{
+
+    let fullnameValue = fullname.value;
+    let idValue = id.value;
+    let ccnumberValue = ccnumber.value;
+    let addressValue = address.value; 
+
+    let error = '';
+
+    if(!fullnameValue){
+        error += 'Please add the fullname \n';
+    }
+
+    if(!idValue){
+        error += 'Please add the id \n';
+    }
+
+    if(!ccnumberValue){
+        error += 'Please add your credit card number \n'
+    }
+
+    if(!addressValue){
+        error += 'Please add address \n';
+    }
+
+    if(error==''){
+       
+    }else{
+        alert(error);
+    }
+
+
+});
+
 
 
 
