@@ -50,7 +50,7 @@ const handleCollectionResult = (querySnapshot) => {
             <p class="cookie__price">FROM $ ${data.price}</p>
           
         </div>
-        <img  src="./img/equis.png" class="cookie__deleteBtn showLoggedAdmin hidden">
+        <img  src="./img/delete.png" class="cookie__deleteBtn showLoggedAdmin hidden">
   
     </section>
 
