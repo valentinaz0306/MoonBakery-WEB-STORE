@@ -2853,6 +2853,7 @@ body {
   font-size: 18px;
   color: #111475;
   margin-top: 100px;
+  margin-left: 30px;
 }
 
 @media (max-width: 900px) {
@@ -2911,14 +2912,13 @@ body {
     color: #111475;
     line-height: 1;
     height: 50px;
-    width: 150px;
+    width: 170px;
   }
   .order__symbols {
     margin-right: 13px;
     margin-top: 10px;
   }
   .order__equis {
-    width: 13px;
     height: 13px;
   }
   .order__price {
@@ -2926,6 +2926,7 @@ body {
     font-size: 12px;
     color: #111475;
     margin-top: 90px;
+    margin-left: 18px;
   }
 }
 
