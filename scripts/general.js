@@ -17,6 +17,7 @@ const cart__span = document.querySelector('.cart__span');
 const USER_COLLECTIONS = db.collection('users');
 const CART_COLLECTION = db.collection('cart');
 const ORDER_COLLECTIONS = db.collection('orders');
+const PRODUCTS_COLLECTIONS = db.collection('products');
 
 const logout = document.querySelector('.logout');
 let cart = [];

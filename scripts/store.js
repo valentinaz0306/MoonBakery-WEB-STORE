@@ -57,9 +57,25 @@ const handleCollectionResult = (querySnapshot) => {
 `;
         product.classList.add('cookie');
         product.setAttribute('href', `./productDetail.html?id=${doc.id}&name=${data.name}`);
+        const deleteBtn = product.querySelector('.cookie__deleteBtn');
+
+        deleteBtn.addEventListener('click', () => {
+            PRODUCTS_COLLECTIONS.doc(doc.id).delete().then(
+                () => {
+                    location.reload();
+                }
+            )
+        });
 
         list.appendChild(product);
     });
+
+    if (loggedUser.admin) {
+        const showLoggedAdmin = document.querySelectorAll('.showLoggedAdmin');
+        showLoggedAdmin.forEach((elem) => {
+            elem.classList.remove('hidden');
+        });
+    }
 }
 
 filters.addEventListener('change', function() {
@@ -109,6 +125,7 @@ filters.addEventListener('change', function() {
     }
 
     productsCollection.get().then(handleCollectionResult);
+
 });
 
 db.collection("products")
