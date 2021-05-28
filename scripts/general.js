@@ -98,8 +98,9 @@ userLoggedIn = () => {
 
 
 
-    console.log(loggedUser);
+
     if (loggedUser.admin) {
+        const showLoggedAdmin = document.querySelectorAll();
 
     }
 

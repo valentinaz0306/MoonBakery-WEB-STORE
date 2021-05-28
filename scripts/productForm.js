@@ -4,6 +4,7 @@ const productFormSuccess = document.querySelector('.productForm__success');
 const productFormError = document.querySelector('.productForm__error');
 const productFormImages = document.querySelector('.productForm__images');
 const imagesLabel = document.querySelector('.imagesLabel');
+const goBack = document.querySelector('.goback');
 
 const imageFiles = [];
 
@@ -20,6 +21,10 @@ toStore = () => {
     }
 
 }
+
+goBack.addEventListener('click', () => {
+    window.location.href = './store.html';
+});
 
 //image load 
 productForm.image.addEventListener('change', function() {
