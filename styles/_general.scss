@@ -44,12 +44,16 @@ body {
     font-size: 13px;
 }
 
-.edit{
-
+.edit {
     font-family: "Chivo";
     color: rgb(17, 20, 117);
     font-size: 13px;
+}
 
+.goback {
+    color: brown;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
 @media(max-width: 900px) {
@@ -64,10 +68,9 @@ body {
         margin-left: 35px;
         font-size: 14px;
     }
-
-    .edit{
+    .edit {
         margin-top: 20px;
         font-size: 16px;
-       margin-right: 20px;
+        margin-right: 20px;
     }
 }
