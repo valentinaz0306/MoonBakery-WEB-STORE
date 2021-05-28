@@ -51,6 +51,15 @@ auth.onAuthStateChanged((user) => {
 
                     toStore();
                 }
+
+
+
+                if (typeof renderOrders === 'function') {
+
+
+
+                    renderOrders();
+                }
             }
 
         });
@@ -62,6 +71,12 @@ auth.onAuthStateChanged((user) => {
         if (typeof toStore === 'function') {
 
             toStore();
+        }
+
+
+        if (typeof renderOrders === 'function') {
+
+            renderOrders();
         }
 
     }

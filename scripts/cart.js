@@ -52,7 +52,9 @@ buy.addEventListener('click', () => {
                     cc: ccnumberValue,
                     addressValue: addressValue,
                     price: elem.price,
-                    quantity: quantities.get(elem.id)
+                    quantity: quantities.get(elem.id),
+                    url: elem.images[0].url
+
                 }
 
                 ORDER_COLLECTIONS.doc().set({ order }).then(

@@ -2838,13 +2838,14 @@ body {
 }
 
 .order__symbols {
-  margin-left: 30px;
+  margin-right: 30px;
   margin-top: 30px;
 }
 
 .order__equis {
-  width: 18px;
+  width: 200px;
   height: 18px;
+  opacity: 0;
 }
 
 .order__price {
