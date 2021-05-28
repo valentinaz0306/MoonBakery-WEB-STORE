@@ -27,7 +27,7 @@ renderOrders = () => {
 
                 let innerHtmlString = `
                   
-                    <img class="order__img" src="img/example.png">
+                    <img class="order__img" src="${o.url}">
                     <div class="order__productInfo">
                         <p class="order__order">your order of cookies</p>
                         <p class="order__cookieName name">${o.cookie}</p>
