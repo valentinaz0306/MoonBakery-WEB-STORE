@@ -167,21 +167,23 @@
         height: 560px;
         &__logo2 {
             height: 75px;
+            margin-left: 70px;
         }
         &__nav {
             height: 75px;
         }
         &__user2 {
-            margin-top: 15px;
+            margin-top: 5px;
             width: 35px;
             height: 35px;
             margin-right: 15px;
         }
         &__bag {
-            margin-top: 15px;
+            margin-top: 2px;
             width: 35px;
             height: 35px;
             margin-right: 15px;
+            margin-left: 15px;
         }
         &__firstOptions {
             display: none;

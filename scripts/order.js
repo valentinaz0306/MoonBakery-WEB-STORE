@@ -68,7 +68,7 @@ renderOrders = () => {
                     </div>
                     <div class="order__symbols">
                         <img class="order__equis" src="img/equis.png">
-                        <p class="order__price">${o.quantity + ' packages $' + o.quantity*o.price}</p>
+                        <p class="order__price">${o.quantity + ' PACKAGES $' + o.quantity*o.price}</p>
                     </div>
         
                 

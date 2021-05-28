@@ -56,6 +56,14 @@ body {
   font-size: 13px;
 }
 
+.goback {
+  font-family: "OSWALD";
+  color: #111475;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
 @media (max-width: 900px) {
   .shop--cookies {
     font-size: 30px;
@@ -1712,21 +1720,23 @@ body {
   }
   .store__logo2 {
     height: 75px;
+    margin-left: 70px;
   }
   .store__nav {
     height: 75px;
   }
   .store__user2 {
-    margin-top: 15px;
+    margin-top: 5px;
     width: 35px;
     height: 35px;
     margin-right: 15px;
   }
   .store__bag {
-    margin-top: 15px;
+    margin-top: 2px;
     width: 35px;
     height: 35px;
     margin-right: 15px;
+    margin-left: 15px;
   }
   .store__firstOptions {
     display: none;
@@ -2070,9 +2080,25 @@ body {
   height: 40px;
 }
 
+@media (min-width: 900px) {
+  .goback {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
+  .productDetail__secOptions {
+    margin-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .productDetail__logo2 {
     height: 75px;
+    margin-left: 70px;
   }
   .productDetail__nav {
     height: 75px;
@@ -2092,13 +2118,14 @@ body {
   .productDetail__firstOptions {
     display: none;
   }
-  .productDetail__secOptions {
+  .productDetail__delivery {
     display: none;
   }
   .productDetail__mobile {
     display: block;
     position: relative;
     z-index: 10;
+    display: none;
   }
   .productDetail_secOptions_mobile {
     display: block;
@@ -2107,12 +2134,7 @@ body {
     margin-top: 60px;
     font-size: 30px;
     text-align: center;
-  }
-}
-
-@media (min-width: 900px) {
-  .productDetail_secOptions_mobile {
-    display: none;
+    margin-bottom: 30px;
   }
 }
 
@@ -2243,7 +2265,7 @@ body {
   .detail__container {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    width: 86%;
+    width: 100%;
     margin-top: 0%;
   }
   .detail__order {
