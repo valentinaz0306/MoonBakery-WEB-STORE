@@ -1,6 +1,18 @@
 const container = document.querySelector('.order__maincontainer');
 
 
+toStore = () => {
+
+    if (loggedUser) {
+        if (!loggedUser.admin) {
+            window.location.href = './store.html';
+        }
+    } else {
+        window.location.href = './store.html';
+    }
+
+}
+
 
 
 renderOrders = () => {
