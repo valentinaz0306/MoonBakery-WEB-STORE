@@ -6,49 +6,67 @@ const address = document.querySelector('.address');
 const ccnumber = document.querySelector('.ccnumber');
 const buy = document.querySelector('.buy');
 
+let quantities = new Map();
+let prices = new Map();
+
+let total = 0;
 
 
-buy.addEventListener('click', ()=>{
+
+buy.addEventListener('click', () => {
 
     let fullnameValue = fullname.value;
     let idValue = id.value;
     let ccnumberValue = ccnumber.value;
-    let addressValue = address.value; 
+    let addressValue = address.value;
 
     let error = '';
 
-    if(!fullnameValue){
+    if (!fullnameValue) {
         error += 'Please add the fullname \n';
     }
 
-    if(!idValue){
+    if (!idValue) {
         error += 'Please add the id \n';
     }
 
-    if(!ccnumberValue){
+    if (!ccnumberValue) {
         error += 'Please add your credit card number \n'
     }
 
-    if(!addressValue){
+    if (!addressValue) {
         error += 'Please add address \n';
     }
 
-    if(error==''){
+    if (error == '') {
 
 
         cart.forEach(
 
-            (elem)=>{
+            (elem) => {
 
                 let order = {
                     cookie: elem.name,
-                    name: fullnameValue, 
-                    id:idValue,
-                    cc:ccnumberValue,
-                    addressValue:addressValue,
-                    price:elem.price,
-
+                    name: fullnameValue,
+                    id: idValue,
+                    cc: ccnumberValue,
+                    addressValue: addressValue,
+                    price: elem.price,
+                    quantity: quantities.get(elem.id)
                 }
+
+                ORDER_COLLECTIONS.doc().set({ order }).then(
+                    () => {
+
+                        cart = [];
+                        CART_COLLECTION.doc(loggedUser.id).set({ cart }).then(
+                            () => {
+                                window.location.href = './confirmation.html';
+                            }
+                        );
+                    }
+                );
+
 
 
 
@@ -56,8 +74,10 @@ buy.addEventListener('click', ()=>{
 
         );
 
-       
-    }else{
+
+
+
+    } else {
         alert(error);
     }
 
@@ -70,10 +90,13 @@ buy.addEventListener('click', ()=>{
 renderCart = () => {
 
 
-    let total = 0;
+    total = 0;
     let products = '';
 
     cart.forEach((elem) => {
+
+        quantities.set(elem.id, 1);
+        prices.set(elem.id, elem.price);
 
         let currentCookie = elem;
 
@@ -84,6 +107,8 @@ renderCart = () => {
 
         let product = document.createElement('div');
         product.className = 'cart__product';
+
+
 
 
         product.innerHTML = `
@@ -134,37 +159,35 @@ renderCart = () => {
             let n = number.innerHTML;
             n++;
             number.innerHTML = n;
+            quantities.set(elem.id, n);
+            total = getTotal();
+            totalHtml.innerText = '$' + total;
         }
 
         subF = () => {
             let n = number.innerHTML;
-            if (n > 0) {
+            if (n > 1) {
                 n--;
                 number.innerHTML = n;
+                quantities.set(elem.id, n);
+                total = getTotal();
+                totalHtml.innerText = '$' + total;
+
             }
-
-
         }
 
 
         add.addEventListener('click', subF);
         subs.addEventListener('click', addF);
-
-
-
-
-
-
-
-
-
-
-
         cartContainer.appendChild(product);
+
 
 
     });
 
+    console.log(quantities);
+    console.log(prices);
+    total = getTotal();
 
     totalHtml.innerText = '$' + total;
 
@@ -179,5 +202,20 @@ searchProduct = (id) => {
     }
 
     return -1;
+
+}
+
+getTotal = () => {
+
+
+    let t = 0;
+    cart.forEach((elem) => {
+
+        t += quantities.get(elem.id) * prices.get(elem.id);
+
+
+    });
+
+    return t;
 
 }
