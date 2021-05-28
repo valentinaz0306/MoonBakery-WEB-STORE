@@ -16,6 +16,7 @@ const cart__span = document.querySelector('.cart__span');
 
 const USER_COLLECTIONS = db.collection('users');
 const CART_COLLECTION = db.collection('cart');
+const ORDER_COLLECTIONS = db.collection('orders');
 
 const logout = document.querySelector('.logout');
 let cart = [];
@@ -31,6 +32,7 @@ let loggedUser = null;
 
 auth.onAuthStateChanged((user) => {
 
+
     if (user) {
 
         USER_COLLECTIONS.doc(user.uid).get().then((doc) => {
@@ -39,6 +41,8 @@ auth.onAuthStateChanged((user) => {
                 return;
             } else {
 
+        
+                console.log(doc.data());
                 setLoggedUser(doc.data());
 
 
@@ -64,6 +68,7 @@ auth.onAuthStateChanged((user) => {
 setLoggedUser = (docDat) => {
 
 
+    console.log(docDat);
     let user = docDat.user;
 
 
@@ -75,6 +80,8 @@ setLoggedUser = (docDat) => {
 
 userLoggedIn = () => {
 
+    console.log("Hola");
+
     const loggedIn = document.querySelectorAll('.userLoggedIn');
     loggedIn.forEach(elem => {
         elem.classList.remove('hidden');
@@ -84,6 +91,13 @@ userLoggedIn = () => {
     loggedOut.forEach(elem => {
         elem.classList.add('hidden');
     });
+
+
+
+    console.log(loggedUser);
+    if(loggedUser.admin){
+
+    }
 
 }
 

@@ -48,8 +48,10 @@ const handleCollectionResult = (querySnapshot) => {
                 <img class="cookie__star ${showStars[4]}" src="img/star.png">
             </div>
             <p class="cookie__price">FROM $ ${data.price}</p>
+          
         </div>
-
+        <img  src="./img/equis.png" class="cookie__deleteBtn showLoggedAdmin">
+  
     </section>
 
 `;

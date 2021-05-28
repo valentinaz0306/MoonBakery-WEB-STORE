@@ -1476,7 +1476,9 @@ body {
 }
 
 .filters__container {
-  margin-left: 710px;
+  margin-left: auto;
+  width: auto;
+  margin-right: 40px;
 }
 
 .filters__select {
@@ -1754,6 +1756,16 @@ body {
   height: 350px;
   margin-top: 60px;
   margin: 12px;
+}
+
+.cookie__deleteBtn {
+  margin-bottom: 10px;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .cookie__img {

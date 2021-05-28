@@ -6,6 +6,8 @@ const address = document.querySelector('.address');
 const ccnumber = document.querySelector('.ccnumber');
 const buy = document.querySelector('.buy');
 
+
+
 buy.addEventListener('click', ()=>{
 
     let fullnameValue = fullname.value;
@@ -32,6 +34,28 @@ buy.addEventListener('click', ()=>{
     }
 
     if(error==''){
+
+
+        cart.forEach(
+
+            (elem)=>{
+
+                let order = {
+                    cookie: elem.name,
+                    name: fullnameValue, 
+                    id:idValue,
+                    cc:ccnumberValue,
+                    addressValue:addressValue,
+                    price:elem.price,
+
+                }
+
+
+
+            }
+
+        );
+
        
     }else{
         alert(error);

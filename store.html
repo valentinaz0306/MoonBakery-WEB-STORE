@@ -39,8 +39,17 @@
 
             </div>
             <div class="store_secOptions_mobile">
-                <img class="store__user2" src="img/user2.png">
-                <img class="store__bag" src="img/bag.png">
+                <a class="store__delivery">LOCAL DELIVERY OR PICK UP</a>
+                <a href="./login.html" class="userLoggedOut">
+                    <img class="store__user2" src="img/user2.png">
+                </a>
+                <a class="store__grocery hidden userLoggedIn logout">LOG OUT</a>
+                <div>
+                    <img class="store__bag" src="img/bag.png">
+                    <div class="cart__span">
+                        10
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -100,6 +109,10 @@
                 <option value="price_desc">Price (more expensive to less expensive)</option>
                 <option value="alpha">Alphabetic (A-Z)</option>
             </select>
+
+            <a href="./productForm.html" class="showLoggedAdmin">
+                EDIT PRODUCTS
+            </a>
 
         </div>
     </form>
