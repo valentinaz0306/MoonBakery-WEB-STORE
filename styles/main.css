@@ -1680,6 +1680,10 @@ body {
   border-radius: 5px;
 }
 
+.storeA {
+  margin-left: 30px;
+}
+
 /* MOBILE*/
 .store_secOptions_mobile {
   display: none;
@@ -1729,6 +1733,9 @@ body {
   }
   .store__textBanner {
     font-size: 50px;
+  }
+  .storeA {
+    margin-left: 0px;
   }
 }
 
