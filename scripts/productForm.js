@@ -10,7 +10,15 @@ const imageFiles = [];
 let imagesCounter = 0;
 
 toStore = () => {
-    window.location.href = './store.html';
+
+    if (loggedUser) {
+        if (!loggedUser.admin) {
+            window.location.href = './store.html';
+        }
+    } else {
+        window.location.href = './store.html';
+    }
+
 }
 
 //image load 

@@ -95,5 +95,7 @@ createBtn.addEventListener('click', () => {
 });
 
 toStore = () => {
-    window.location.href = './store.html';
+
+    if (loggedUser)
+        window.location.href = './store.html';
 }

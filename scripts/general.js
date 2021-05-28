@@ -41,7 +41,7 @@ auth.onAuthStateChanged((user) => {
                 return;
             } else {
 
-        
+
                 console.log(doc.data());
                 setLoggedUser(doc.data());
 
@@ -58,6 +58,10 @@ auth.onAuthStateChanged((user) => {
 
         loggedUser = null;
         userLoggedOut();
+        if (typeof toStore === 'function') {
+
+            toStore();
+        }
 
     }
 
@@ -95,7 +99,7 @@ userLoggedIn = () => {
 
 
     console.log(loggedUser);
-    if(loggedUser.admin){
+    if (loggedUser.admin) {
 
     }
 
