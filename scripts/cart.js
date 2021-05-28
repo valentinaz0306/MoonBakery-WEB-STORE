@@ -125,7 +125,7 @@ renderCart = () => {
                     </div>
                     <div class="cart__symbols">
                         <img class="cart__equis x" src="img/equis.png">
-                        <p class="cart__price">${currentCookie.price}</p>
+                        <p class="cart__price">$${currentCookie.price}</p>
                     </div>
           
         `;
