@@ -70,12 +70,15 @@ const handleCollectionResult = (querySnapshot) => {
         list.appendChild(product);
     });
 
-    if (loggedUser.admin) {
-        const showLoggedAdmin = document.querySelectorAll('.showLoggedAdmin');
-        showLoggedAdmin.forEach((elem) => {
-            elem.classList.remove('hidden');
-        });
+    if (loggedUser) {
+        if (loggedUser.admin) {
+            const showLoggedAdmin = document.querySelectorAll('.showLoggedAdmin');
+            showLoggedAdmin.forEach((elem) => {
+                elem.classList.remove('hidden');
+            });
+        }
     }
+
 }
 
 filters.addEventListener('change', function() {
