@@ -1,8 +1,11 @@
 .cart {
+   
     display: flex;
+
     &__container {
         width: 650px;
     }
+
     &__span {
         position: absolute;
         top: 32px;
@@ -93,10 +96,19 @@
 
 @media(max-width: 1000px) {
     .cart {
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        &__list {
+
+        &__container {
+
+         
+        width: auto;
+
+        }
+        
+         &__list {
             margin-left: 0px;
             margin-top: 30px;
         }
