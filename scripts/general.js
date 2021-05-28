@@ -84,7 +84,7 @@ setLoggedUser = (docDat) => {
 
 userLoggedIn = () => {
 
-    console.log("Hola");
+
 
     const loggedIn = document.querySelectorAll('.userLoggedIn');
     loggedIn.forEach(elem => {
@@ -97,11 +97,11 @@ userLoggedIn = () => {
     });
 
 
-
-
     if (loggedUser.admin) {
-        const showLoggedAdmin = document.querySelectorAll();
-
+        const showLoggedAdmin = document.querySelectorAll('.showLoggedAdmin');
+        showLoggedAdmin.forEach((elem) => {
+            elem.classList.remove('hidden');
+        });
     }
 
 }
@@ -119,7 +119,13 @@ userLoggedOut = () => {
         elem.classList.remove('hidden');
     });
 
+    const showLoggedAdmin = document.querySelectorAll('.showLoggedAdmin');
+    showLoggedAdmin.forEach((elem) => {
+        elem.classList.add('hidden');
+    });
 }
+
+
 
 getMyCart = (uid) => {
 
